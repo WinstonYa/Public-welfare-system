@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .user-headimg{
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+<!--    <div class="row m-pos"><snap>您所在的位置：个人中心 &gt; <span>基本资料</span></snap></div>-->
+    <div class="row">
+        <div class="col-md-12">
+            <!--这里是普通用户看到的信息 begin-->
+            <div class="row padding-15" id="memberdiv" style="display: block;">
+                <div class="col-sm-9">
+                    <ul class="user-info clearfix">
+                        <li>
+                            <label>用户类型：</label>
+                            <span>个人用户</span>
+                        </li>
+                        <li>
+                            <label>用<span class="small"></span>户<span class="small"></span>名：</label>
+                            <span id="account"></span>
+                        </li>
+                        <li>
+                            <label>姓名：</label>
+                            <span id="name"></span>
+                        </li>
+                        <li>
+                            <label>手机号码：</label>
+                            <span id="telphone"></span>
+                        </li>
+                        <!--<li>
+                            <label>微<span class="big"></span>信：</label>
+                            <span id="wechat"></span>
+                        </li>-->
+                        <li>
+                            <label>是否认证：</label>
+                            <span id="isVerify" class="red">否</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img class="user-headimg" src="./images/head.png">
+                </div>
+            </div>
+            <!--这里是普通用户看到的信息 end-->
+        </div>
+    </div>
+</div>
+
+<script>
+    var oToken = localStorage.getItem('token');
+
+    loadPersonal()
+    function loadPersonal() {
+        $.ajax({
+            url: InterfaceDZSW + "/user/getUserInfoByTokenPart?token=" + oToken,
+            dataType: "json",//数据格式
+            type: "post",//请求方式
+            cache: true,
+            contentType: 'application/json; charset=utf-8',
+            success: function (res) {
+                if (res.status === 200){
+                    $("#account").html(res.data.account)
+                    $("#name").html(res.data.name)
+                    $("#telphone").html(res.data.telephone)
+                    if (res.data.isVerify == 0){
+                        $("#isVerify").html("否")
+                    }else {
+                        $("#isVerify").html("是")
+                    }
+                }
+            },
+            error: function (e) {
+            }
+        })
+    }
+</script>
+</body>
+</html>

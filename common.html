@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="keywords" content=""/>
+    <meta http-equiv="description" content="农产品质量安全追溯信息系统"/>
+<!--    <script src="js/jquery.js"></script>-->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/front.js"></script>
+    <title>农产品质量安全追溯信息系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/other.css">
+</head>
+
+<body class="shichang-list">
+<script>
+    function qkeypress() {
+        var q = $("input[name=q]");
+        if (q.val().trim() != "") {
+            $("input[name=q]").autocomplete("enable");
+        } else {
+            $("input[name=q]").autocomplete("disable");
+        }
+    };
+</script>
+<div class="header">
+
+    <div class="container m-container">
+        <div class="row">
+            <div style="height: 50px;" class="col-md-12">
+                <div class="website">当前位置: <a href="index.html">首页</a> > <a class="newsTypes"></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div style="background-color: #ffffff" class="col-md-9 margin-bottom-40" >
+                <div  class="content-box">
+                    <h2 class="title"></h2>
+                    <div style="padding-top: 10px" class="content-inf">
+                        <span style="font-family: 宋体，SimSun; font-size:12px"  class="author"></span>
+                        &nbsp;
+                        <span style="font-family: 宋体，SimSun; font-size:12px" class="updatetime"></span>
+                    </div>
+                    <div class="content-article">
+                        <div style="padding-top: 10px" class="view TRS_UEDITOR trs_paper_default trs_word trs_key4format trs_web">
+                          <p style="font-family: 宋体，SimSun; font-size:18px;" class="content"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            <div style="padding-top: 5px" class="col-md-3">
+                <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg1.jpg" /></div>
+                <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg2.jpg" /></div>
+            </div>
+    </div>
+</div>
+
+<div class="footer-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 padding-0">
+                <div class="footer-img"><img src="picture/footer-logo.jpg"/></div>
+                <div class="footer-menu">
+                    <!--<ul class="clearfix">
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">联系我们</a></li>
+                        <li><a href="#" target="_blank">法律声明</a></li>
+                        <li><a href="#" target="_blank">网站地图</a></li>
+                    </ul>  -->
+                    <div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All
+                        Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 padding-0">
+                <div class="footer-info">主办方：监利市回族自治区农业农村厅</div>
+                <div class="footer-info">技术支持：中国电信股份有限公司监利市分公司</div>
+                <div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a
+                        href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="js/header.js"></script>
+
+<script src="./js/commom/api.js"></script>
+<script>
+    var url = window.location.search.indexOf("=");
+    var id = window.location.search.substr(url + 1);
+
+    $(document).ready(function () {
+        $.ajax({
+            url: Interface + "/article/id?id=" + id,//请求地址
+            dataType: "json",//数据格式
+            type: "get",//请求方式
+            cache: true,
+            contentType: 'application/json;charset=utf-8',
+            async: false,//是否异步请求
+            success: function (data) {
+
+                $('.title,.newsTypes').html(data.data.title);
+                $('.author').html("来源：" + data.data.author);
+                if (data.data.pubTime != undefined){
+                    $('.updatetime').html("发布时间：" + data.data.pubTime.substr(0,10));
+                }
+                $('.newsTypes').html(data.data.type);
+
+                $('.content').html(data.data.content)
+            },
+            error: function (e) {
+                console.log("2222")
+            }
+        })
+    })
+</script>
+</html>

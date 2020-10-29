@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="keywords" content=""/>
+    <meta http-equiv="description" content="监利市三农信息网老百姓的的网站"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="./css/pagination.css" media="screen">
+    <title>监利市12316三农综合信息服务平台</title>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/lte-ie9_5.css">
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/lt-ie8_5.css">
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="shichang-list">
+<script>
+    function qkeypress() {
+        var q = $("input[name=q]");
+        if (q.val().trim() != "") {
+            $("input[name=q]").autocomplete("enable");
+        } else {
+            $("input[name=q]").autocomplete("disable");
+        }
+    };
+</script>
+
+<div class="container m-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="website">当前位置: <a href="/">首页</a> > <a
+                    href="jiage.html">市场动态</a> > <a
+                    href="jiage.html">价格行情</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="content-box">
+                <h2 id="title">2020年09月30日主要农畜农产品价格行情</h2>
+                <div class="content-article">
+                    <table class="table table-bordered table-jiage">
+                        <thead>
+                        <tr>
+                            <th>类别</th>
+                            <th>产品</th>
+                            <th>单位</th>
+                            <th>价格</th>
+                            <th>数据来源</th>
+                        </tr>
+                        </thead>
+                        <tbody id="PriceDetails">
+                        <!--<tr>
+                            <td rowspan="17" class="middle">蔬菜</td>
+                            <td>茄子</td>
+                            <td>元/斤</td>
+                            <td>1.98</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>豆角</td>
+                            <td>元/斤</td>
+                            <td>3.82</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>西红柿</td>
+                            <td>元/斤</td>
+                            <td>2.32</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>黄瓜</td>
+                            <td>元/斤</td>
+                            <td>2.26</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>青椒</td>
+                            <td>元/斤</td>
+                            <td>2.7</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>本地尖椒</td>
+                            <td>元/斤</td>
+                            <td>2.95</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>大蒜</td>
+                            <td>元/斤</td>
+                            <td>4.4</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>白葱</td>
+                            <td>元/斤</td>
+                            <td>2.04</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>大白菜</td>
+                            <td>元/斤</td>
+                            <td>1.08</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>蒜苔</td>
+                            <td>元/斤</td>
+                            <td>3.54</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>莲花菜</td>
+                            <td>元/斤</td>
+                            <td>1.18</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>青笋</td>
+                            <td>元/斤</td>
+                            <td>2.5</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>平菇</td>
+                            <td>元/斤</td>
+                            <td>5.02</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>胡萝卜</td>
+                            <td>元/斤</td>
+                            <td>1.82</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>韭菜</td>
+                            <td>元/斤</td>
+                            <td>2.66</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>茭瓜</td>
+                            <td>元/斤</td>
+                            <td>1.56</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>油菜</td>
+                            <td>元/斤</td>
+                            <td>1.88</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="11" class="middle">畜禽产品</td>
+                            <td>猪肉</td>
+                            <td>元/斤</td>
+                            <td>26.2</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>牛肉</td>
+                            <td>元/斤</td>
+                            <td>38</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>羊肉</td>
+                            <td>元/斤</td>
+                            <td>35.7</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>鸡蛋</td>
+                            <td>元/斤</td>
+                            <td>4.74</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>活猪</td>
+                            <td>元/斤</td>
+                            <td>16.63</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>仔猪</td>
+                            <td>元/斤</td>
+                            <td>51</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>活牛</td>
+                            <td>元/斤</td>
+                            <td>17.1</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>活羊</td>
+                            <td>元/斤</td>
+                            <td>15.8</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>活鸡</td>
+                            <td>元/斤</td>
+                            <td>11.13</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>白条鸡</td>
+                            <td>元/斤</td>
+                            <td>8.7</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>鸡腿</td>
+                            <td>元/斤</td>
+                            <td>9.33</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1" class="middle">枸杞</td>
+                            <td>枸杞</td>
+                            <td>元/斤</td>
+                            <td>15.88</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="middle">食用油</td>
+                            <td>胡麻油</td>
+                            <td>元/斤</td>
+                            <td>8.43</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>大豆油</td>
+                            <td>元/斤</td>
+                            <td>5.02</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>菜籽油</td>
+                            <td>元/斤</td>
+                            <td>6.11</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9" class="middle">粮食</td>
+                            <td>小麦</td>
+                            <td>元/斤</td>
+                            <td>1.29</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>玉米</td>
+                            <td>元/斤</td>
+                            <td>1.22</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>大米</td>
+                            <td>元/斤</td>
+                            <td>2.53</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>稻谷</td>
+                            <td>元/斤</td>
+                            <td>1.3</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>大豆</td>
+                            <td>元/斤</td>
+                            <td>2.96</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>糜子</td>
+                            <td>元/斤</td>
+                            <td>2</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>谷子</td>
+                            <td>元/斤</td>
+                            <td>2.5</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>荞麦</td>
+                            <td>元/斤</td>
+                            <td>1.9</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>马铃薯</td>
+                            <td>元/斤</td>
+                            <td>1.19</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="middle">水产品</td>
+                            <td>草鱼</td>
+                            <td>元/斤</td>
+                            <td>8.63</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>
+                        <tr>
+                            <td>鲤鱼</td>
+                            <td>元/斤</td>
+                            <td>7</td>
+                            <td> 全区9个县（区）13个农贸市场</td>
+                        </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg1.jpg"/></div>
+            <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg2.jpg"/></div>
+        </div>
+    </div>
+</div>
+<div class="footer-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 padding-0">
+                <div class="footer-img"><img src="picture/footer-logo.jpg"/></div>
+                <div class="footer-menu">
+                    <!--<ul class="clearfix">
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">联系我们</a></li>
+                        <li><a href="#" target="_blank">法律声明</a></li>
+                        <li><a href="#" target="_blank">网站地图</a></li>
+                    </ul>  -->
+                    <div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All
+                        Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 padding-0">
+                <div class="footer-info">主办方：监利市回族自治区农业农村厅</div>
+                <div class="footer-info">技术支持：中国电信股份有限公司监利市分公司</div>
+                <div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a
+                        href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ad-ceshi-->
+<!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
+	<script type="text/javascript" src="js/adspace.js"></script>
+</div>-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/zixun-jiaodian.js"></script>
+<script src="js/header.js"></script>
+
+<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "0",
+        "bdSize": "16"
+    },
+    "slide": {"type": "slide", "bdImg": "1", "bdPos": "left", "bdTop": "135"},
+    "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
+    "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/kkpager.js"></script>
+
+<script src="./js/pagination/jquery.pagination.js"></script>
+<script src="./js/commom/api.js"></script>
+<script>
+    var return_none = "1";
+    var list = $(".text");
+    var channel_name = "市场动态";
+    for (i = 0; i < $(".text").length; i++) {
+        var active = $(".text").eq(i).text();
+        if (active == channel_name) {
+            $("li").removeClass("active");
+            list.eq(i).parents("li").addClass("active");
+            return_none = "0";
+        }
+    }
+
+    $(function () {
+		let s1 = location.search.substring(1,11);
+		let data = {
+			"date" : s1
+		};
+		PriceQuotation(data);
+    });
+
+	function PriceQuotation(data) {
+		$("#PriceDetails").empty();
+		$.ajax({
+			url : InterfaceDZSW + "/price/getPriceListByOneDate",
+			type : "get",
+			async : false,
+			dataType : "json",
+			data : data,
+			success : function(data) {
+				var html = "";
+				var unit = '元/斤';
+				if (data.length > 0) {
+					for ( var i in data) {
+						var key = data[i];
+						html += "<tr>" + "<td rowspan='"+key.list.length+"' class='middle'>" + key.type + "</td>" + "<td>" + key.list[0].name + "</td>" + "<td>" + unit + "</td>"
+								+ "<td>" + key.list[0].price + "</td>" + "<td>" + key.list[0].source + "</td></tr>";
+						for ( var j = 1; j < key.list.length; j++) {
+							html += "<tr><td>" + key.list[j].name + "</td>" + "<td>" + unit + "</td>" + "<td>" + key.list[j].price + "</td>" + "<td>" + key.list[j].source
+									+ "</td></tr>";
+						}
+					}
+				}
+				$("#PriceDetails").append(html);
+			},
+			error : function(e) {
+				console.info(e);
+			}
+		});
+	}
+</script>
+</body>
+</html>

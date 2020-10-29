@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="keywords" content=""/>
+<meta http-equiv="description" content="监利市三农信息网老百姓的的网站"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/other.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+
+<!--分页-->
+<link rel="stylesheet" type="text/css" href="./pagination/pagination.css" media="screen">
+
+<title>监利市12316三农综合信息服务平台</title>
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="css/lte-ie9_1.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="css/lt-ie8_1.css">
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="shichang-list">
+<script>
+function qkeypress(){
+	var q=$("input[name=q]");
+	if(q.val().trim()!=""){
+		$("input[name=q]").autocomplete("enable");
+	}else{
+		$("input[name=q]").autocomplete("disable");
+	}
+};
+</script>
+<div class="container m-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="website">当前位置: <a href="index.html">首页</a> > <a href="szyw.html">时政要闻</a></div>
+        <div class="clear"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<div class="ej-menu">
+				<ul>
+				<a class="active"  href="szyw.html">时政要闻</a>
+				<a href="nyyw.html">农业要闻</a>
+				<a href="kjyw.html">科技要闻</a>
+				<a href="nsqx.html.html">农事气象</a>
+				</ul>
+			</div>
+			<div class="newslist">
+        		<ul id="news">
+        		</ul>
+				<div class="m-style M-box4"></div>
+				<!--<div class="total">
+					当前第<span>1</span>/<span>1</span>页&nbsp;&nbsp;共<span>4</span>条记录
+				</div>-->
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg1.jpg" /></div>
+			<div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg2.jpg" /></div>
+		</div>
+	</div>
+</div>
+<div class="footer-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 padding-0">
+				<div class="footer-img"><img src="picture/footer-logo.jpg" /></div>
+				<div class="footer-menu">
+					<div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All Rights Reserved.</div>
+				</div>
+			</div>
+			<div class="col-md-4 padding-0">
+				<div class="footer-info">主办方：监利市回族自治区农业农村厅 </div>
+				<div class="footer-info">技术支持：中国电信股份有限公司监利市分公司 </div>
+				<div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"1","bdPos":"left","bdTop":"135"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script><script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script>
+$(document).ready(function(){
+	var return_none = "1";
+	var list=$(".text");
+		var channel_name ="时政要闻";
+	for (i=0;i<$(".text").length;i++) {
+		var active =$(".text").eq(i).text();
+		if(active==channel_name){
+			$("li").removeClass("active");
+			list.eq(i).parents("li").addClass("active");
+			return_none="0";
+		}
+	}
+	var channer_parent_name="新闻动态";
+	if(return_none!="0"){
+		for (i=0;i<$(".text").length;i++) {
+			var active =$(".text").eq(i).text();
+			if(active==channer_parent_name){
+				$("li").removeClass("active");
+				list.eq(i).parents("li").addClass("active");
+				return_none="0";
+			}
+		}
+	}
+});
+</script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--//分页插件-->
+<script src="js/pagination/jquery.pagination.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/zixun-jiaodian.js"></script>
+<script src="js/header.js"></script>
+<script src="js/commom/api.js"></script>
+</body>
+<script type="text/javascript">
+	$(function () {
+		// $("#menuList").find("li:eq(2)").attr("class","active");
+		// console.log($("#menuList li").eq(1).attr("class","active"))
+		$("#menuList li").eq(0).attr("class","more")
+		$("#menuList li").eq(1).attr("class","more active")
+
+		var data = {
+			pageNum : 1,
+			pageRow : 2,
+			sysType:"公益性系统",
+			articleType:"时政要闻",
+			status:"1"
+		};
+		var total;
+		InitList();//初始化列表数据
+		function InitList(){
+			$.ajax({
+				url: Interface + "/article/list",//请求地址
+				dataType: "json",//数据格式
+				type: "get",//请求方式
+				cache: true,
+				contentType: 'application/json;charset=utf-8',
+				async: false,//是否异步请求
+				data: data,
+				success: function (data) {
+					$("#news").empty();
+					for (var i = 0; i < data.data.rows.length; i++){
+						var updatetime = data.data.rows[i].pub_time;
+						var date = updatetime.substr(0,10);
+						$("#news").append('<li class="oneArticle" style="padding-bottom: 30px">' +
+								'<a class="newsType">[时政要闻]</a>' +
+								'<a href="common.html?id='+data.data.rows[i].id+'" class="szywnewsTitle">' + data.data.rows[i].title + '</a>' +
+								'<span>' + date + '</span>' +
+								'</li>')
+					}
+					total = data.data.total;
+				},
+				error: function (e) {
+					console.log(e);
+				}
+			})
+		}
+		$('.M-box4').pagination({
+			//总条数
+			totalData: total,
+			//每页条数
+			showData:2,
+			//固定页码数
+			mode:"unfixed",
+			count:3,
+			isHide:true,
+			//是否一直显示上一页下一页
+			keepShowPN:false,
+			callback: function (api) {
+				data.pageNum = api.getCurrent();
+				InitList();
+			}
+		});
+	})
+
+</script>
+</html>

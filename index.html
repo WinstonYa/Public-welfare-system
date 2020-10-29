@@ -1,0 +1,1555 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="keywords" content=""/>
+    <meta http-equiv="description" content="监利市公益性服务网"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>监利市益农服务网</title>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/lte-ie9.css">
+    <![endif]-->
+    <!--    html5shiv 是一个针对 IE 浏览器的 HTML5 JavaScript 补丁，目的是让 IE 识别并支持 HTML5 元素-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/lt-ie8.css">
+    <script src="./js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body id="bodyContainer">
+<!--<script>
+    function qkeypress() {
+        var q = $("input[name=q]");
+        if (q.val().trim() != "") {
+            $("input[name=q]").autocomplete("enable");
+        } else {
+            $("input[name=q]").autocomplete("disable");
+        }
+    };
+</script>-->
+<div class="container index-bg m-container">
+    <div class="row">
+        <!--轮播图-->
+        <div class="col-md-7 padding-left-0 margin-bottom-10">
+            <!--<div class="flashbox">
+                <div class="focusNew_out flashlist">
+
+                </div>
+                <div class="f_tabs">
+                    <span class="hover"><i class="iconfont">&#xe646;</i> </span> <span><i class="iconfont">&#xe646;</i> </span>
+                    <span><i class="iconfont">&#xe646;</i> </span> <span><i class="iconfont">&#xe646;</i> </span> <span><i
+                        class="iconfont">&#xe646;</i> </span>
+                </div>
+            </div>-->
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper" id="swiperWrapper">
+                    <!--<div class="swiper-slide">
+                      <a href="./html/farm-news/news-detail.html">
+                        <img width="660" height="300" src="http://www.moa.gov.cn/xw/zwdt/202009/W020200921584947296444.jpg">
+                        <span class="imgSpan">农业农村部召开促进返乡留乡农民工就地就近就...</span>
+                      </a>
+                    </div>
+
+                   <div class="swiper-slide">
+                       <a href="./html/farm-news/news-detail.html">
+                           <img width="660" height="300" src="./images/head.png">
+                           <span class="imgSpan">农业农村部召开促进返乡留乡农民工就地就近就...</span>
+                       </a>
+                   </div>-->
+                </div>
+                <!-- Add Pagination -->
+                <div style="left: 250px" class="swiper-pagination swp1"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+        <!--12316动态-->
+        <div class="col-md-5 padding-0 margin-bottom-10">
+            <div class="bg-fff">
+                <div class="title-bg">
+                    <label class="title">新闻动态</label>
+                    <span><a href="./nyyw.html" target="_blank">
+								更多<i class="iconfont">&#xe64d;</i>
+							</a>
+                    </span>
+                </div>
+                <div class="news-list">
+                    <ul id="news">
+                        <!-- <li>
+                            <a href="nyyw/index.jhtml" target="_blank" class="lanmu">[农业要闻]</a>
+                            <a href="nyyw/1993.jhtml" target="_blank" title="农业农村厅召开“不忘初心、牢记使命”主题教育工作会议">农业农村厅召开“不忘初心、牢记使命”主...</a>
+                            <span>2019-06-04</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--供求信息发布-->
+        <div class="col-md-8 padding-left-0 margin-bottom-10">
+            <div class="bg-fff">
+                <ul class="nav nav-tabs supply-tab">
+                    <li class="active">
+                        <a href="#supply" data-toggle="tab">供应信息</a>
+                    </li>
+                    <li>
+                        <a href="#buy" data-toggle="tab">求购信息</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#other" data-toggle="tab">其它信息</a>
+                    </li> -->
+                    <input type="button" value="我要发布" onclick="myPublish();"/>
+                    <span><a href="gongying.html" target="_blank">
+								更多<i class="iconfont">&#xe64d;</i>
+							</a> </span>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="supply">
+                        <table class="table table-supplyth">
+                            <thead>
+                            <tr>
+                                <th class="title text-left">标题</th>
+                                <th class="name">联系人</th>
+                                <th class="phone">联系电话</th>
+                                <th class="county">区县</th>
+                                <th class="date">发布日期</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div id="ScrollSupply">
+                            <div id="ScrollSupply1">
+                            </div>
+                            <div id="ScrollSupply2"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="buy">
+                        <table class="table table-supplyth">
+                            <thead>
+                            <tr>
+                                <th class="title text-left">标题</th>
+                                <th class="name">联系人</th>
+                                <th class="phone">联系电话</th>
+                                <th class="county">区县</th>
+                                <th class="date">发布日期</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div id="ScrollBuy">
+                            <div id="ScrollBuy1">
+                                <table class="table table-striped table-hover table-supplytd">
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="ScrollBuy2"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="other">
+                        <table class="table table-supplyth">
+                            <thead>
+                            <tr>
+                                <th class="title text-left">标题</th>
+                                <th class="name">联系人</th>
+                                <th class="phone">联系电话</th>
+                                <th class="county">区县</th>
+                                <th class="date">发布日期</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div id="ScrollOther">
+                            <div id="ScrollOther1">
+                                <table class="table table-striped table-hover table-supplytd">
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="ScrollOther2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--今日专家-->
+        <div class="col-md-4 padding-0 margin-bottom-10">
+            <div class="bg-fff">
+                <div class="title-zj">
+                    <div class="title">
+                        <i class="iconfont">&#xe629;</i>专家信息
+                    </div>
+                    <span><a href="qbzj.html" target="_blank">
+								更多<i class="iconfont">&#xe64d;</i>
+							</a> </span>
+                </div>
+                <div class="box">
+                    <div class="box_img">
+                        <ul id="curExpertInfo">
+
+                        </ul>
+                    </div>
+                    <div class="box_tab"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin-bottom-10">
+        <!--        <script type="text/javascript" src="js/adspace.js"></script>-->
+        <img src="./images/content.jpg" class="img-responsive" border="0" data-bd-imgshare-binded="1">
+    </div>
+    <div class="row margin-bottom-10">
+        <div class="bg-fff padding-bottom-15 clearfix">
+            <div class="hangqing-title">
+                <span id="jghq"></span>
+                <div class="hangqing-more">
+                    <a href="./jiage.html" target="_blank">
+                        更多<i class="iconfont">&#xe64d;</i>
+                    </a>
+                </div>
+            </div>
+            <!--柱状图 begin-->
+            <div>
+                <!--<div id="priceList" style="height: 200px">
+                </div>-->
+                <div class="col-md-11">
+                    <div id="main_con1"></div>
+                    <!--<div id="main_con2"></div>
+                    <div id="main_con3"></div>
+                    <div id="main_con4"></div>
+                    <div id="main_con5"></div>
+                    <div id="main_con6"></div>-->
+                </div>
+                <div class="memus col-md-1 padding-0">
+                    <ul class="hangqing-menu" id="types">
+                    </ul>
+                </div>
+            </div>
+            <!--柱状图 end-->
+        </div>
+    </div>
+    <div class="row">
+        <!--农业百科-->
+        <div class="col-md-7 padding-left-0 margin-bottom-10">
+            <div class="bg-fff">
+                <div class="title-bg">
+                    <label class="title">农业百科</label>
+                    <span><a href="baike/index.jhtml" target="_blank">
+								更多<i class="iconfont">&#xe64d;</i>
+							</a> </span>
+                </div>
+                <div class="news-list">
+                    <ul id="newsList">
+                        <!--<li>
+                            <a href="xmsyjs/index.jhtml" target="_blank" class="lanmu">[畜牧兽医技术]</a>
+                            <a href="xmsyjs/649.jhtml" target="_blank" title="草畜产业【奶牛】">草畜产业【奶牛】</a>
+                            <span>2019-01-12</span>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--天气-->
+        <div class="col-md-5 padding-0 margin-bottom-10">
+            <div class="bg-fff weather">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#weather-info" data-toggle="tab">
+                            气象信息
+                        </a>
+                    </li>
+                    <!--<li>
+                        <a href="#weather-warning" data-toggle="tab">
+                            气象预警
+                        </a>
+                    </li>-->
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="weather-info">
+                        <!-- weather-js -->
+                        <!--                        <div id="weather-view-he"></div>-->
+                        <div id="weather-v2-plugin-standard"></div>
+                    </div>
+                    <div class="tab-pane fade" id="weather-warning">
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="bg-fff">
+                <div class="title-bg">
+                    <label class="title">
+                        <i class="iconfont">&#xe66a;</i>气象信息
+                    </label>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <!--ad-2-->
+    <div class="row margin-bottom-10">
+        <!--        <script type="text/javascript" src="js/adspace.js"></script>-->
+    </div>
+    <div class="row">
+        <!--农技视频-->
+        <div class="col-md-8 padding-left-0 margin-bottom-10">
+            <div class="bg-fff clearfix">
+                <div class="title-bg">
+                    <label class="title">农技视频</label>
+                    <span>
+                        <a href="nykj.html" target="_blank">更多<i class="iconfont">&#xe64d;</i></a>
+                    </span>
+                </div>
+                <div class="video-left">
+<!--                    <a href="shipin/780.jhtml" target="_blank">-->
+<!--                        <img class="img-responsive" src="picture/30145650a8zd.png"/>-->
+<!--                    </a>-->
+<!--                    <span><i class="iconfont">&#xe647;</i></span>-->
+                </div>
+                <div class="news-list video-right">
+                    <ul id="rightvideoss">
+                        <!--<li>
+                            <a href="shipin/index.jhtml" target="_blank" class="lanmu">[农技视频]</a>
+                            <a href="shipin/330.jhtml" target="_blank" title="时食鲜盆栽活性菜">时食鲜盆栽活性菜</a>
+                            <span>2018-09-01</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--热线问答-->
+        <div class="col-md-4 padding-0 margin-bottom-10">
+            <div class="bg-fff">
+                <div class="title-bg">
+                    <label class="title">
+                        <i class="iconfont">&#xe601;</i>热线问答
+                    </label>
+                    <span><a href="./rxwd.html">
+								更多<i class="iconfont">&#xe64d;</i>
+							</a> </span>
+                </div>
+                <div id="demo" class="question">
+                    <ul id="demo1">
+                    </ul>
+                    <ul id="demo2"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--特色农业-->
+    <div class="row margin-bottom-10">
+        <div class="bg-fff">
+            <ul class="nav nav-tabs nongye-tab">
+                <li class="active">
+                    <a href="#internet" data-toggle="tab">农业科技</a>
+                </li>
+                <li>
+                    <a href="#village" data-toggle="tab">讲座培训</a>
+                </li>
+                <li>
+                    <a href="#arder" data-toggle="tab">文化生活</a>
+                </li>
+                <!--                <li>-->
+                <!--                    <a href="#product" data-toggle="tab">休闲农业</a>-->
+                <!--                </li>-->
+                <span><a href="./nykj.html" target="_blank">
+							更多<i class="iconfont">&#xe64d;</i>
+						</a> </span>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="internet">
+                    <ul class="nongye clearfix" id="internetVideo">
+                        <!--<li>
+                            <a href="yzlscy/915.jhtml" target="_blank" title="良田万顷•稻菽飘香">
+                                <img class="img-responsive" src="picture/19085148d8aj.jpg"/> <span>良田万顷•稻菽飘香</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="yzlscy/915.jhtml" target="_blank" title="良田万顷•稻菽飘香">
+                                <img class="img-responsive" src="picture/19085148d8aj.jpg"/> <span>良田万顷•稻菽飘香</span>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="village">
+                    <ul class="nongye clearfix" id="villageVideo"></ul>
+                </div>
+                <div class="tab-pane fade" id="arder">
+                    <ul class="nongye clearfix" id="arderVideo"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ad-3-->
+    <div class="row margin-bottom-10">
+        <!--        <script type="text/javascript" src="js/adspace.js"></script>-->
+    </div>
+
+    <div class="row margin-bottom-10">
+        <div class="bg-fff">
+            <div class="title-bg">
+                <label class="title">友情链接</label>
+            </div>
+            <div>
+                <ul class="img-link clearfix">
+                    <li>
+                        <a href="http://www.moa.gov.cn/" target="_blank">
+                            <img class="img-responsive" src="picture/nyb.png"/>
+                        </a>
+                        <span><a href="http://www.moa.gov.cn/" target="_blank">农业部</a> </span>
+                    </li>
+                    <li>
+                        <a href="http://www.haagri.gov.cn/html/" target="_blank">
+                            <img class="img-responsive" src="picture/zgnyw.png"/>
+                        </a>
+                        <span><a href="http://www.zgny.com.cn/" target="_blank">中国农业网</a> </span>
+                    </li>
+                    <li>
+                        <a href="http://nynct.nx.gov.cn/" target="_blank">
+                            <img class="img-responsive" src="images/hbsnyw.png"/>
+                        </a>
+                        <span><a href="http://www.hbnyw.com/" target="_blank">湖北农业网</a> </span>
+                    </li>
+                    <li>
+                        <a href="http://nyt.hubei.gov.cn/" target="_blank">
+                            <img class="img-responsive" src="images/hbnyt.png"/>
+                        </a>
+                        <span><a href="http://nyt.hubei.gov.cn/" target="_blank">湖北农业厅</a> </span>
+                    </li>
+                    <li>
+                        <a href="http://www.jianli.gov.cn/" target="_blank">
+                            <img class="img-responsive" src="images/jlsrmzf.png"/>
+                        </a>
+                        <span><a href="http://www.jianli.gov.cn/" target="_blank">监利市人民政府</a> </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 padding-0">
+                <div class="footer-img"><img src="picture/footer-logo.jpg"/></div>
+                <div class="footer-menu">
+                    <!--<ul class="clearfix">
+                        <li><a href="#" target="_blank">常见问题</a></li>
+                        <li><a href="#" target="_blank">联系我们</a></li>
+                        <li><a href="#" target="_blank">法律声明</a></li>
+                        <li><a href="#" target="_blank">网站地图</a></li>
+                    </ul>  -->
+                    <div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2020 FOR WONDERFUL LIFE All
+                        Rights Reserved.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 padding-0">
+                <div class="footer-info">主办方：监利市农业农村局</div>
+                <div class="footer-info">技术支持：中迪联创科技有限公司</div>
+                <div class="footer-info">监利市农业农村局 &copy; 版权所有 <a
+                        href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">鄂ICP备：1111111号-3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ad-ceshi-->
+<!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
+	<script type="text/javascript" src="js/adspace.js"></script>
+</div>-->
+
+<!--左侧悬浮框 分享-->
+<!--<script>window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "0",
+        "bdSize": "16"
+    },
+    "slide": {"type": "slide", "bdImg": "1", "bdPos": "left", "bdTop": "135"},
+    "image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
+    "selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
+};
+with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>-->
+
+
+<script src="js/header.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/zixun-jiaodian.js"></script>
+<script src="js/commom/api.js"></script>
+
+<!--<script src="js/echarts/echarts.min.js"></script>-->
+
+<!--天气预报-->
+<script>
+    /*235Qzfaujd*/
+    // WIDGET = {ID: 'jYhjoUSZH1'};
+</script>
+<script>
+    WIDGET = {
+        CONFIG: {
+            "layout": 1,
+            "width": 480,
+            "height": 208,
+            "background": 1,
+            "dataColor": "FFFFFF",
+            "borderRadius": 1,
+            "key": "lT0m7YQIl0"
+        }
+    }
+</script>
+<!--<script type="text/javascript" src="https://apip.weatherdt.com/view/static/js/r.js?v=1111"></script>-->
+<script src="https://apip.weatherdt.com/standard/static/js/weather-standard-common.js?v=2.0"></script>
+<script>
+    //var strCookie = document.cookie;
+    /*var arrCookie = strCookie.split("; ");
+    var cookieUser; // 获取到cookie中的cookieUser
+    for(var i = 0;i < arrCookie.length;i++){
+        var arr = arrCookie[i].split("=");
+        //找到名称为cookieUser的cookie，并返回它的值
+        if("cookieUser"===arr[0]){
+            cookieUser=arr[1];
+            break;
+        }
+    }*/
+</script>
+<!--右侧悬浮框-->
+<!--<div class="right-fixed">
+    <ul>
+        <li class="weixin">
+            <i class="iconfont">&#xe606;</i>
+            <div class="weixin-logo"><img src="picture/ewm1.png"/></div>
+        </li>
+        <li class="link">
+            <a href="http://www.yn12316.net/" target="_blank"><img src="picture/entrance.png"/></a>
+        </li>
+        <li class="back-top"><i class="iconfont">&#xe64f;</i></li>
+    </ul>
+    <script type="text/javascript">
+        $(function () {
+            var $body = $(document.body);
+            ;
+            var $bottomTools = $('.right-fixed');
+            $(window).scroll(function () {
+                var scrollHeight = $(document).height();
+                var scrollTop = $(window).scrollTop();
+                scrollTop > 50 ? $(".back-top").slideDown(300).css("display", "block") : $(".back-top").slideUp(300);
+            });
+            $('.back-top').click(function (e) {
+                e.preventDefault();
+                $('html,body').animate({scrollTop: 0});
+            });
+
+        });
+    </script>
+</div>-->
+
+<script>
+    //导航二级菜单
+    /*$(".menu li").click(function() {
+        $(".menu li").removeClass("active");
+        $(this).addClass("active");
+    });*/
+    //首页焦点图
+    FeatureList(".flashbox", {
+        "onclass": "hover",
+        "offclass": "",
+        "pause_on_act": "click",
+        "interval": 5000,
+        "speed": 5,
+        "options": 5000
+    });
+    //今日专家
+    $(document).ready(function () {
+        queryCurexpert();
+        var timejg = 3000;//轮播间隔时间
+        var size = $('.box_img ul li').size();
+        /*for (var i = 1; i <= size; i++) {
+            $('.box_tab').append('<a href="javascript:(void)"></a>')
+        }*/
+
+        $('.box_img ul li').eq(0).show();
+        $('.box_tab a').eq(0).addClass('active')
+        $('.box_tab a').mouseover(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            var index = $(this).index();
+            i = index;
+            $('.box_img ul li').eq(index).stop().fadeIn(300).siblings().stop().fadeOut(300);
+        });
+
+        var i = 0;
+        var time = setInterval(move, timejg);
+
+        function move() {
+            i++;
+            if (i == size) {
+                i = 0;
+            }
+
+            $('.box_tab a').eq(i).addClass('active').siblings().removeClass('active');
+            $('.box_img ul li').eq(i).fadeIn(300).siblings().fadeOut(300);
+        }
+
+        $('.box').hover(function () {
+            clearInterval(time);
+        }, function () {
+            time = setInterval(move, timejg);
+        });
+    });
+    //供求-供应信息
+    $(function () {
+        supplyInfo(0);
+        var ScrollSupply = document.getElementById("ScrollSupply");
+        var ScrollSupply1 = document.getElementById("ScrollSupply1");
+        var ScrollSupply2 = document.getElementById("ScrollSupply2");
+        var speed = 150; //数值越大滚动速度越慢
+        var TrLength = $("#ScrollSupply1 tr").length;
+        if (TrLength > 6) {
+            ScrollSupply2.innerHTML = ScrollSupply1.innerHTML;
+            ScrollSupply.scrollTop = ScrollSupply.scrollHeight + 'px';
+
+            function Marquee() {
+                //向下的无缝循环滚动
+                if (ScrollSupply2.offsetTop - ScrollSupply.scrollTop <= 0) //当滚动至demo1与demo2交界时
+                    ScrollSupply.scrollTop -= ScrollSupply1.offsetHeight //demo跳到最顶端
+                else {
+                    ScrollSupply.scrollTop++
+                }
+                ;
+            };
+            var MyMar = setInterval(Marquee, speed);
+            ScrollSupply.onmouseover = function () {
+                clearInterval(MyMar)
+            };
+            ScrollSupply.onmouseout = function () {
+                MyMar = setInterval(Marquee, speed)
+            };
+        }
+    });
+    //供求-求购信息
+    $(function () {
+        buyInfo(1);
+        var ScrollBuy = document.getElementById("ScrollBuy");
+        var ScrollBuy1 = document.getElementById("ScrollBuy1");
+        var ScrollBuy2 = document.getElementById("ScrollBuy2");
+        var speed = 150; //数值越大滚动速度越慢
+        var TrLen = $("#ScrollBuy1 tr").length;
+        if (TrLen > 6) {
+            ScrollBuy2.innerHTML = ScrollBuy1.innerHTML;
+            ScrollBuy.scrollTop = ScrollBuy.scrollHeight + 'px';
+
+            function Marquee() {
+                //向下的无缝循环滚动
+                if (ScrollBuy2.offsetTop - ScrollBuy.scrollTop <= 0) //当滚动至demo1与demo2交界时
+                    ScrollBuy.scrollTop -= ScrollBuy1.offsetHeight //demo跳到最顶端
+                else {
+                    ScrollBuy.scrollTop++
+                }
+                ;
+            };
+            var MyMar = setInterval(Marquee, speed);
+            ScrollBuy.onmouseover = function () {
+                clearInterval(MyMar)
+            };
+            ScrollBuy.onmouseout = function () {
+                MyMar = setInterval(Marquee, speed)
+            };
+        }
+    });
+    //热线问答
+    $(function () {
+        queryMemberConsult();
+        var demo = document.getElementById("demo");
+        var demo1 = document.getElementById("demo1");
+        var demo2 = document.getElementById("demo2");
+        var LiLength = $("#demo1 > li").length;
+        var speed = 150; //数值越大滚动速度越慢
+        if (LiLength > 6) {//超过一页的数据时，在循环滚动。
+            demo2.innerHTML = demo1.innerHTML;
+            demo.scrollTop = demo.scrollHeight + 'px';
+
+            function Marquee() {
+                //向下的无缝循环滚动
+                if (demo2.offsetTop - demo.scrollTop <= 0) //当滚动至demo1与demo2交界时
+                    demo.scrollTop -= demo1.offsetHeight //demo跳到最顶端
+                else {
+                    demo.scrollTop++
+                }
+            }
+
+            var MyMar = setInterval(Marquee, speed);
+            demo.onmouseover = function () {
+                clearInterval(MyMar)
+            };
+            demo.onmouseout = function () {
+                MyMar = setInterval(Marquee, speed)
+            };
+        }
+    });
+    /****************************************轮播图*******************************/
+    $(function () {
+        // initSwiper();
+        loadWrapper();
+    });
+
+    //轮播图
+    function loadWrapper() {
+        let param = {
+            page: 1,
+            size: 5,
+            targetSystem: "公益性系统",
+        };
+        doApi(function (res) {
+            if (res.status === 200) {
+                // console.log(res);
+                var wrapperHtml = "";
+                for (let i = 0; i < res.data.rows.length; i++) {
+                    wrapperHtml += "<div class=\"swiper-slide\">\n" +
+                        "                <a href=\"./common.html?id=" + res.data.rows[i].articleId + "\">\n" +
+                        "                  <img width=\"660\" height=\"318\" src=\"" + res.data.rows[i].path + "\">\n" +
+                        "                  <span class=\"imgSpan\">" + res.data.rows[i].title + "</span>\n" +
+                        "                </a>\n" +
+                        "              </div>"
+                }
+                $("#swiperWrapper").html(wrapperHtml);
+                //初始化轮播图插件
+                initSwiper();
+            }
+        }, function (err) {
+            console.log(err);
+        }, null, Interface + "/carousel/page", "get", param, null)
+    }
+
+    function initSwiper() {
+        let swiper = new Swiper('.swiper1', {
+            pagination: {
+                el: '.swp1',
+            },
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 2500,
+            effect: 'fade',
+            loop: true
+        });
+    }
+
+    //柱状图
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 2,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+
+    var chart;
+
+    var addr = 48;
+    var type;
+    var location_text = "";
+    var type_text = "";
+    var titale = "";
+    $(function () {
+        //init_location();
+        //init_types();
+        // **********************产品种类切换样式***********
+        // ************************地点切换事件*******************
+        $("#country").change(function () {
+            addr = $(this).val();
+            location_text = $("#location").find("option:selected").text() + "—" + $(this).find("option:selected").text();
+            queryDatas();
+            chart.setTitle(null, {
+                text: "",// location_text + "—" + type_text,
+                x: -20
+            });
+        })
+        init_types();
+        queryDatas();
+    });
+
+    function bind_typeEvent() {
+        $(".memus").find("li").bind("click", function () {
+            $(".memus").find("li").removeClass("colorgreens");// 初始化选中样式
+            $(this).addClass("colorgreens");// 被点击的li添加选中样式
+            type_text = $(this).text();
+            //农产品类型
+            type = $(this).attr("id");
+            queryDatas();
+            chart.setTitle({
+                text: "",//location_text + type_text, // 设置主级标题
+                x: -20
+            });
+        })
+    }
+
+    function queryDatas() {
+        //获取一种类型的全部名称和价格
+        $.ajax({
+            url: InterfaceDZSW + "/price/getPriceListByCategory",
+            type: "get",
+            dataType: "json",
+            data: {"category": type},
+            success: function (data) {
+                /*if (data.sendDate != undefined) {
+                    $("#jghq").html(data.sendDate + "  最新农畜农产品价格行情 ");
+                } else {
+                }*/
+                $("#jghq").html("最新农畜农产品价格行情 ");
+                var categories = [];
+                var data1 = [];
+                for (let i = 0; i < data.data.length; i++) {
+                    categories.push(data.data[i].productName)
+                    data1.push(data.data[i].price)
+                }
+                // categories = data.products.type;
+                // data1 = data.products.price1;
+                init_data(categories, data1);
+            },
+            error: function (e) {
+                console.info(e);
+            }
+        });
+    }
+
+    function init_data(categories, data1) {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'main_con1',
+                defaultSeriesType: 'column', // 图表类别，可取值有：line、spline、area、areaspline、bar、column等
+                marginRight: 130,
+                marginBottom: 50,
+                height: 320
+            },
+            title: {
+                text: "",//location_text + type_text, // 设置一级标题
+                x: -20
+                // center
+            },
+            /*
+             * subtitle: { text: '（银川)', //设置二级标题 x: -20 },
+             */
+            xAxis: {
+                categories: categories
+
+                // 设置x轴的标题
+            },
+            yAxis: {
+                title: {
+                    text: '' // 设置y轴的标题
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#fff'
+                }]
+            },
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + '</b><br/>' + this.x + ': ' + this.y + '元/斤'; // 鼠标放在数据点的显示信息，但是当设置显示了每个节点的数据项的值时就不会再有这个显示信息
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right', // 设置说明文字的文字 left/right/top/
+                verticalAlign: 'top',
+                x: -10,
+                y: 100,
+                borderWidth: 0
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        overflow: "visible",
+                        crop: true,
+                        enabled: true, // dataLabels设为true
+                        style: {
+                            color: '#686868',
+                            fontSize: '8px !important',
+                            boxShadow: 'none',
+                            textShadow: "none"
+                        }
+                    }
+                }
+            },
+            animation: true,
+            series: [{
+                name: '最新价格', // 每条线的名称
+                data: data1,//每条线的数据
+                color: '#ffc346'
+            }]
+        });
+    }
+
+    //类型
+    function init_types() {
+
+        var data = [[{"typeName": "蔬菜", "id": "蔬菜"}, {"typeName": "畜禽产品", "id": "畜禽产品"}, {
+            "typeName": "粮食",
+            "id": 2
+        }, {"typeName": "食用油", "id": 6}, {"typeName": "水产品", "id": 4}, {"typeName": "枸杞", "id": 1}]]
+        //获取所有农产品类型
+        $.ajax({
+            url: InterfaceDZSW + "/dic/getDicByType",
+            type: "post",
+            dataType: "json",
+            data: {"type": "农产品分类"},
+            async: false,
+            success: function (res) {
+                $("#types").empty();
+
+                var length = res.data.length;
+
+                var html = "";
+                for (var i = 0; i < res.data.rows.length; i++) {
+                    if (i == 0) {
+                        html = "<li tabindx=" + i + " id=" + res.data.rows[i].text + " class=\"colorgreens\">" + res.data.rows[i].text + "</li>";
+                    } else {
+                        html += "<li tabindx=" + i + " id=" + res.data.rows[i].text + ">" + res.data.rows[i].text + "</li>";
+                    }
+                }
+                $("#types").append(html);
+                type = $("#types").children(".colorgreens").attr("id");
+                bind_typeEvent();
+            },
+            error: function (e) {
+                console.info(e);
+            }
+        });
+    }
+
+    //地市
+    function init_location() {
+        selectDistrict();
+    }
+
+    function selectDistrict() {//根据地市查询区县
+        var deptId = $("#location").val();
+        $("#country").empty();
+        $.ajax({
+            type: "POST",
+            url: "#",
+            data: {
+                deptId: deptId
+            },
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                var html = "";
+                if (data != null && data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        html = "<option value='" + data[i].id + "'>" + data[i].name + "</option>";
+                        $("#country").append(html);
+                    }
+                    addr = $("#country").val();
+                    location_text = $("#location").find("option:selected").text() + "—" + $("#country").find("option:selected").text();
+                    init_types();
+                    queryDatas();
+                }
+            }
+        });
+    }
+
+    function selectCountry() {
+        location_text = $("#location").find("option:selected").text() + "—" + $("#country").find("option:selected").text();
+    }
+
+    /****************************************价格行情发布end*******************************/
+
+    /****************************************获取今日专家信息begin******************************/
+    function queryCurexpert() {
+        var date = new Date();
+        var strDate = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        if (month >= 1 && month <= 9) {
+            month = "0" + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = "0" + strDate;
+        }
+        var newdate = year + "-" + month + "-" + strDate; //获取系统当前日期
+
+        var newlist = [];
+        //var array = [];
+        var nnewdate = "";
+        var newid = "";
+        var newname = "";
+
+        $.ajax({
+            url: InterfaceGYX + "/expert/getExpertInfoList",
+            type: "get",
+            async: false,
+            cache: true,
+            dataType: "json",
+            data: {
+                page: 1,
+                limit: 6,
+            },
+            contentType: 'application/json;charset=utf-8',
+            success: function (data) {
+                var html = "";
+                $("#curExpertInfo").empty();
+                if (data.data.rows.length > 0) {
+                    /*for (let j = 0; j < data.data.length; j++) {
+                        if (data.data[j].expertduties.length > 0) {
+                            for (let k = 0; k < data.data[j].expertduties.length; k++) {
+                                nnewdate = data.data[j].expertduties[k].date.substr(0, 10);
+                                newid = data.data[j].expertduties[k].expertid;
+                                newname = data.data[j].expertduties[k].expertname;
+                                if (newdate === nnewdate) {
+                                    if (newlist.length > 0) {
+                                        for (let i = 0; i < newlist.length; i++) {
+                                            if (newid === newlist[i].id) {
+                                                var image = newlist[i].image;
+                                                if (image === "" || image == null) {
+                                                    image = "picture/logo.png";//默认头像
+                                                }
+                                                var business = newlist[i].business;
+                                                // business = Trim(business);
+                                                business = business.substring(0, 5) + "...";
+                                                var official = newlist[i].official;
+                                                //official = Trim(official);
+                                                official = official.substring(0, 5) + "...";
+                                                var wechat = newlist[i].wechat;
+                                                // wechat = Trim(wechat);
+                                                wechat = wechat.substring(0, 8) + "...";
+
+                                                html = "<li>" +
+                                                    "<div class='zj-box'>" + "<div class='zj-img'>" + "<a href='expert.html?id=" + newlist[i].id + "' target='_blank'>"
+                                                    + "<img class='img-responsive' src='" + image + "'>" + "</a>" + "</div>" +
+                                                    "<div class='zj-info'>" +
+                                                    "<p><label>" + "专家姓名：" + "" + newlist[i].name + "" + "</label></p>" +
+                                                    "<p><label>" + "职务/职称：" + "" + newlist[i].official + "" + "</label></p>" +
+                                                    "<p><label>" + "业务专长：" + "" + newlist[i].business + "" + "</label></p>" +
+                                                    "<p><label>" + "联系方式：" + "" + newlist[i].telephone + "" + "</label></p>" +
+                                                    "<p><label>" + "微信号码：" + "" + newlist[i].wechat + "" + "</label></p>" +
+                                                    "<p><label>" + "服务区县：" + "" + newlist[i].location + "" + "</label></p>" +
+                                                    /!* "<p>" + "<label>综合评分：</label>" + "" + retStar(data[i].star) + "" + "</p>" +
+                                                     "<p>" + "<label>咨询次数：</label>" + "" + data[i].req + "" + "</p>" +
+                                                     "<p>" + "<label>回复率：</label>" + "" + data[i].percentage + "" + "</p>" +*!/
+                                                    "</div>" + "</div>" +
+                                                    "<div class='zj-more'>" + "<a href='consultation.html?id=" + newlist[i].id + "' target='_blank'>查看详情</a>" +
+                                                    "</div>" +
+                                                    "</li>";
+                                                $("#curExpertInfo").append(html);
+
+                                            }
+                                        }
+                                    }
+                                } else {
+                                    break;
+                                }
+                            }
+                        }
+                    }*/
+
+                    for (let i = 0; i < data.data.rows.length; i++) {
+                        // if (newid === data.data.rows[i].id) {
+                        var image = data.data.rows[i].photo;
+                        if (image === "" || image == null) {
+                            image = "./picture/default/head.png";//默认头像
+                        }
+                        var business = data.data.rows[i].expertise;
+                        // business = Trim(business);
+                        business = business.substring(0, 5) + "...";
+                        var official = data.data.rows[i].jobTitle;
+                        //official = Trim(official);
+                        official = official.substring(0, 5) + "...";
+                        // var wechat = data.data.rows[i].wechat;
+                        // wechat = Trim(wechat);
+                        // wechat = wechat.substring(0, 8) + "...";
+
+                        html = "<li>" +
+                            "<div class='zj-box'>" + "<div class='zj-img'>" + "<a href='consultation.html?" + data.data.rows[i].id + "' target='_blank'>"
+                            + "<img class='img-responsive' src='" + image + "'>" + "</a>" + "</div>" +
+                            "<div class='zj-info'>" +
+                            "<p><label>" + "专家姓名：" + "" + data.data.rows[i].expertName + "" + "</label></p>" +
+                            "<p><label>" + "职务/职称：" + "" + data.data.rows[i].jobTitle + "" + "</label></p>" +
+                            "<p><label>" + "业务专长：" + "" + data.data.rows[i].expertise + "" + "</label></p>" +
+                            "<p><label>" + "联系方式：" + "" + data.data.rows[i].phone + "" + "</label></p>" +
+                            // "<p><label>" + "微信号码：" + "" + data.data.rows[i].wechat + "" + "</label></p>" +
+                            "<p><label>" + "服务区县：" + "" + data.data.rows[i].serviceArea + "" + "</label></p>" +
+                            /* "<p>" + "<label>综合评分：</label>" + "" + retStar(data[i].star) + "" + "</p>" +
+                             "<p>" + "<label>咨询次数：</label>" + "" + data[i].req + "" + "</p>" +
+                             "<p>" + "<label>回复率：</label>" + "" + data[i].percentage + "" + "</p>" +*/
+                            "</div>" + "</div>" +
+                            "<div class='zj-more'>" + "<a href='consultation.html?" + data.data.rows[i].id + "' target='_blank'>查看详情</a>" +
+                            "</div>" +
+                            "</li>";
+                        $("#curExpertInfo").append(html);
+                        // }
+                    }
+
+                    if (html == "") {
+                        html = "<p rowspan='30' colspan='30' style='text-align:center;vertical-align:middle;'>今日未安排值班专家！</p>";
+                        $("#curExpertInfo").append(html);
+                    }
+
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    }
+
+    /****************************************获取今日专家信息end******************************/
+
+    /****************************************热线问答begin******************************/
+    function queryMemberConsult() {
+        $("#demo1").empty();
+        var data = {
+            page: 1,
+            limit: 6,
+            state: 1
+        };
+        $.ajax({
+            url: InterfaceGYX + "/consult/getPageByState",
+            type: "get",
+            async: true,
+            dataType: "json",
+            data: data,
+            success: function (data) {
+                var html = "";
+                if (data.data.rows.length > 0) {
+                    for (var i = 0; i < data.data.rows.length; i++) {
+                        var title = data.data.rows[i].title;
+                        var str = "";
+                        if (title.length > 23) {
+                            str = title.substring(0, 23) + "...";
+                        } else {
+                            str = title;
+                        }
+                        html += "<li>" + "<div class='title'><a href='#' onclick='hotlineAskDetail(" + data.data.rows[i].id + ")'>" + str + "</a></div>" +
+                            //"<div class='answer'>答："+data[i].content+"</div>"+
+                            "</li>";
+                    }
+                } else {
+                    html += "<div class='padding-15 text-center'>暂无热线问答信息。</div>";
+                }
+                $("#demo1").append(html);
+            },
+            error: function (e) {
+                console.info(e);
+            }
+        });
+    }
+
+    function hotlineAskDetail(_id) {
+        var url = "./detail_ask.html?id=" + _id;
+        // window.open(url);
+        window.location = url;
+    }
+
+    /****************************************热线问答end******************************/
+
+
+    /****************************************供应信息begin******************************/
+    function supplyInfo(_tradeType) {
+        $("#ScrollSupply1").empty();
+        // $.ajax({
+        //     url: InterfaceGYX + "/supplydemand/all",
+        //     type: "POST",
+        //     async: false,
+        //     dataType: "json",
+        //     data: {
+        //         curPage: 1,
+        //         pageSize: 15,
+        //         inputPage: "",
+        //         tradeType: _tradeType
+        //     },
+        //     success: function (data) {
+        //         var html = "<table class='table table-striped table-hover table-supplytd'><tbody>";
+        //         if (data.list.length > 0) {
+        //             for (var i = 0; i < data.list.length; i++) {
+        //                 var title = data.list[i].title;
+        //                 var publishDate = data.list[i].publishDate;
+        //                 var str = "";
+        //                 if (title.length > 18) {
+        //                     str = title.substring(0, 18) + "...";
+        //                 } else {
+        //                     str = title;
+        //                 }
+        //                 if (publishDate != null && publishDate != "") {
+        //                     publishDate = publishDate.substring(0, 10);
+        //                 } else {
+        //                     publishDate = "";
+        //                 }
+        //                 html += "<tr>" +
+        //                     "<td class='title text-left'><a href='#' onclick='tradeDetail(" + data.list[i].id + ")'>" + str + "</a></td>" +
+        //                     "<td class='name'>" + data.list[i].username + "</td>" +
+        //                     "<td class='phone'>" + data.list[i].mobile + "</td>" +
+        //                     "<td class='county'>" + data.list[i].departName + "</td>" +
+        //                     "<td class='date'>" + publishDate + "</td>" +
+        //                     "</tr>";
+        //             }
+        //         } else {
+        //             html += "<div class='padding-15 text-center'>暂无供应信息。</div>";
+        //         }
+        //         html += "</tbody></table>";
+        //         $("#ScrollSupply1").append(html);
+        //     },
+        //     error: function (e) {
+        //         console.info(e);
+        //     }
+        // });
+    }
+
+    /****************************************供应信息end******************************/
+
+    /****************************************求购信息begin******************************/
+    function buyInfo(_tradeType) {
+        $("#ScrollBuy1").empty();
+        $.ajax({
+            url: "#",
+            type: "POST",
+            async: false,
+            dataType: "json",
+            data: {
+                curPage: 1,
+                pageSize: 15,
+                inputPage: "",
+                tradeType: _tradeType
+            },
+            success: function (data) {
+                var html = "<table class='table table-striped table-hover table-supplytd'><tbody>";
+                if (data.list.length > 0) {
+                    for (var i = 0; i < data.list.length; i++) {
+                        var buyTitle = data.list[i].title;
+                        var publishDate = data.list[i].publishDate;
+                        var buyStr = "";
+                        if (buyTitle.length > 18) {
+                            buyStr = buyTitle.substring(0, 18) + "...";
+                        } else {
+                            buyStr = buyTitle;
+                        }
+                        if (publishDate != null && publishDate != "") {
+                            publishDate = publishDate.substring(0, 10);
+                        } else {
+                            publishDate = "";
+                        }
+                        html += "<tr>" +
+                            "<td class='title text-left'><a href='' onclick='tradeDetail(" + data.list[i].id + ")'>" + buyStr + "</a></td>" +
+                            "<td class='name'>" + data.list[i].username + "</td>" +
+                            "<td class='phone'>" + data.list[i].mobile + "</td>" +
+                            "<td class='county'>" + data.list[i].departName + "</td>" +
+                            "<td class='date'>" + publishDate + "</td>" +
+                            "</tr>";
+                    }
+                } else {
+                    html += "<div class='padding-15 text-center'>暂无求购信息。</div>";
+                }
+                html += "</tbody></table>";
+                $("#ScrollBuy1").append(html);
+            },
+            error: function (e) {
+                console.info(e);
+            }
+        });
+    }
+
+    /****************************************求购信息end******************************/
+    function tradeDetail(_id) {
+        var url = "./tradeDetail.html?id=" + _id;
+        window.location.href=url
+    }
+
+    /************我要发布start******************************/
+    function myPublish() {
+        let item = localStorage.getItem("username");
+        console.log(item)
+        //用户未登录
+        if (null == localStorage.getItem("username")) {
+            if (confirm("您好！请先登录后再发布。")) {
+                window.location.href = "./login.html";
+            }
+        } else {
+            window.location.href = "./personal.html#mySupply";
+        }
+    }
+
+    /************新闻start******************************/
+    //所有包括在$(document).ready()里面的元素或事件都将会在DOM完成加载之后立即加载，并且在页面内容加载之前
+    $(document).ready(function () {
+
+        /************农业要闻start******************************/
+        let params = "pageNum=1&pageRow=6&sysType=公益性系统&articleType=时政要闻&status=1";
+
+        loadNews(params);
+
+        function loadNews(param) {
+            doApi(function (res) {
+                if (res.status === 200) {
+                    for (var i = 0; i < res.data.rows.length; i++) {
+                        var date = res.data.rows[i].pub_time.substr(0, 10);
+                        $("#news").append(
+                            '<li class="oneArticle">'
+                            +
+                            '<a class="newsType">[时政要闻]</a>'
+                            +
+                            '<a href="common.html?id=' + res.data.rows[i].id + '" class="newsTitle">' + res.data.rows[i].title + '</a>'
+                            +
+                            '<span>' + date + '</span></li>'
+                        )
+                    }
+                }
+            }, function (err) {
+                // console.log(err);
+            }, null, Interface + "/article/list?" + param, "get", null, null)
+        }
+
+        /************供求信息start******************************/
+        params = ["pageNum=1&pageRow=6&pubType=0", "pageNum=1&pageRow=6&pubType=1"];
+        let htmlContents = [
+            "ScrollSupply1",
+            "ScrollBuy1",
+        ];
+        for (let i = 0; i < params.length; i++) {
+            loadSupply(params[i], htmlContents[i]);
+        }
+
+        function loadSupply(param, htmlContent) {
+            doApi(function (res) {
+                if (res.status === 200) {
+                    var html = "<table class='table table-striped table-hover table-supplytd'><tbody>";
+                    if (res.data.rows.length > 0) {
+                        for (var i = 0; i < res.data.rows.length; i++) {
+                            var title = res.data.rows[i].title;
+                            var time = res.data.rows[i].pub_time.substr(0, 10);
+                            // console.log(time)
+                            var str = "";
+                            if (title.length > 18) {
+                                str = title.substring(0, 18) + "...";
+                            } else {
+                                str = title;
+                            }
+                            html += "<tr>" +
+                                "<td class='title text-left'><a href='#' onclick='tradeDetail(" + res.data.rows[i].id + ")'>" + str + "</a></td>" +
+                                "<td class='name'>" + res.data.rows[i].contact_person + "</td>" +
+                                "<td class='phone'>" + res.data.rows[i].phone + "</td>" +
+                                "<td class='county'>" + res.data.rows[i].area + "</td>" +
+                                "<td class='date'>" + time + "</td>" +
+                                "</tr>";
+                        }
+                    } else {
+                        html += "<div class='padding-15 text-center'>暂无供应信息。</div>";
+                    }
+                    html += "</tbody></table>";
+                    $("#" + htmlContent).append(html);
+                }
+            }, function (err) {
+                // console.log(err);
+            }, null, InterfaceGYX + "/supplydemand/getInfoListByType?" + param, "get", null, null)
+        }
+
+        /************农业百科start******************************/
+        //暂时只有种植技术，日后需要修改接口，查出农业百科所有分类下的文章
+        params = "pageNum=1&pageRow=6&sysType=公益性系统&articleType=种植技术&status=1";
+        loadNewsList(params);
+
+        function loadNewsList(param) {
+            doApi(function (res) {
+                if (res.status === 200) {
+                    for (var i = 0; i < res.data.rows.length; i++) {
+                        var date = res.data.rows[i].pub_time.substr(0, 10);
+                        $("#newsList").append(
+                            ' <li>\n' +
+                            '       <a href="zzjs.html" target="_blank" class="lanmu">[农业百科]</a>\n' +
+                            '       <a href="./common.html?id=' + res.data.rows[i].id + '" >' + res.data.rows[i].title + '</a>\n' +
+                            '       <span>' + date + '</span>\n' +
+                            ' </li>'
+                        )
+                    }
+                }
+            }, function (err) {
+                console.log(err);
+            }, null, Interface + "/article/list?" + param, "get", null, null)
+        }
+
+        /************农技视频start******************************/
+        // loadVideoList();
+        /*function loadVideoList(param) {
+            for (var i = 0; i < 5 && i <= data.data.length; i++) {
+                var date = data.data[i].uploaddate.substr(0, 10);
+                $("#rightvideoss").append(
+                    '<li class="oneArticle">'
+                    +
+                    '<a class="newsType">[' + data.data[i].classification + ']</a>'
+                    +
+                    '<a href="commonvideo.html?id=' + data.data[i].id + '" class="newsTitle">' + data.data[i].videoname + '</a>'
+                    +
+                    '<span>' + date + '</span></li>'
+                )
+            }
+        }*/
+
+
+    });
+
+
+    //--------------农技视频---------------
+    $(document).ready(function () {
+        setTimeout(function () {
+            $.ajax({
+                url: InterfaceDZSW + "/video/videosByPage",
+                dataType: "json",
+                type: "GET",
+                cache: true,
+                contentType: 'application/json;charset=utf-8',
+                async: false,
+                data: {page: 1, limit: 6},
+                success: function (data) {
+                    //视频左侧缩略图
+                    var img;
+                    if (data.data.rows[0].thumbnail == undefined){
+                        img = "./images/zhanwei.png"
+                    }else {
+                        img = "http://" + data.data.rows[0].thumbnail
+                    }
+                    $(".video-left").html('<a href="commonvideo.html?' + data.data.rows[0].id + '" target="_blank">\n' +
+                        '                        <img class="img-responsive" src="' + img + '"/>\n' +
+                        '                    </a>')
+
+                    //视频右侧列表
+                    var date
+                    for (var i = 1; i < data.data.rows.length; i++) {
+                        date = data.data.rows[i].pubTime.substr(0, 10);
+                        $("#rightvideoss").append(
+                            '<li class="oneArticle">'
+                            +
+                            '<a class="lanmu">[' + data.data.rows[i].type + ']</a>'
+                            +
+                            '<a href="commonvideo.html?' + data.data.rows[i].id + '" class="newsTitle">' + data.data.rows[i].videoName + '</a>'
+                            +
+                            '<span>' + date + '</span></li>'
+                        )
+                    }
+                },
+                //  误信息、捕获的错误对象(可选)
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+
+        }, 100);
+
+
+        setTimeout(function () {
+            var data = {
+                page : 1,
+                limit : 5,
+                type:"农业科技",
+            };
+            InitList(data,"internetVideo");//初始化列表数据
+            data.type = "讲座培训";
+            InitList(data,"villageVideo");//初始化列表数据
+            data.type = "文化生活";
+            InitList(data,"arderVideo");//初始化列表数据
+        },1000)
+    });
+    function InitList(data,idTag){
+            $.ajax({
+                url: InterfaceDZSW + "/video/videosByPage",//请求地址
+                dataType: "json",//数据格式
+                type: "get",//请求方式
+                cache: true,
+                contentType: 'application/json;charset=utf-8',
+                async: false,//是否异步请求
+                data: data,
+                success: function (data) {
+                    var img;
+                    for (var i = 0; i < data.data.rows.length; i++){
+                        var updatetime = data.data.rows[i].pubTime;
+                        var date = updatetime.substr(0,10);
+                        if (data.data.rows[i].thumbnail == undefined || data.data.rows[i].thumbnail == null){
+                            img = "./images/zhanwei.png"
+                        }else {
+                            img = "http://" + data.data.rows[i].thumbnail;
+                        }
+                        $("#"+idTag).append('<li>\n' +
+                            '                            <a href="commonvideo.html?'+ data.data.rows[i].id +'" target="_blank" title="'+ data.data.rows[i].videoName +'">\n' +
+                            '                                <img class="img-responsive" src="http://'+ data.data.rows[i].thumbnail +'"/> <span>'+ data.data.rows[i].videoName +'</span>\n' +
+                            '                            </a>\n' +
+                            '                        </li>')
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            })
+    }
+
+    // ------------------专家---------------------------
+    // $.ajax({
+    //     url: "#",
+    //     type: "GET",
+    //     async: false,
+    //     cache: true,
+    //     dataType: "json",
+    //     data: {},
+    //     contentType: 'application/json;charset=utf-8',
+    //     success: function (data) {
+    //         for (var i = 0; i <= data.data.rows.length; i++) {
+    //             $("#curExpertInfo").append('<li>\n' +
+    //                 '<div class="zj-box">\n' +
+    //                 '                                    <div class="zj-img">\n' +
+    //                 '                                        <a>\n' +
+    //                 '                                            <img class=\'img-responsive\' src="http://'+ data.data.rows[i].path +'">\n' +
+    //                 '                                        </a>\n' +
+    //                 '                                    </div>\n' +
+    //                 '                                    <div class="zj-info">\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>专家姓名:' + data.data.rows[i].name + '</label>\n' +
+    //                 '\t\t\t\t\t\t\t\t\t\t</p>\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>职务/职称：<span>' + data.data.rows[i].official + '</span></label>\n' +
+    //                 '                                        </p>\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>业务专长：<span>' + data.data.rows[i].business + '</span></label>\n' +
+    //                 '                                        </p>\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>联系方式：<span>' + data.data.rows[i].telephone + '</span></label>\n' +
+    //                 '                                        </p>\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>微信号码：<span>' + data.data.rows[i].wechat + '</span></label>\n' +
+    //                 '                                        </p>\n' +
+    //                 '                                        <p>\n' +
+    //                 '                                            <label>所在地区：<span>' + data.data.rows[i].location + '</span></label>\n' +
+    //                 '                                        </p>\n' +
+    //                 '                                    </div>\n' +
+    //                 '                                </div>\n' +
+    //                 '                                <div class="zj-more">\n' +
+    //                 '                                    <a href="consultation.html?id=' + data.data.rows[i].id + '" target="_blank">查看详情</a>\n' +
+    //                 '                                </div></li>')
+    //
+    //
+    //         }
+    //         // $("#curExpertInfo").append(html);
+    //     },
+    //     error: function (e) {
+    //         console.log(e);
+    //
+    //     }
+    // })
+
+</script>
+</body>
+</html>
