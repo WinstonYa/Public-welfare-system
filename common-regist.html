@@ -1,280 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <meta http-equiv="keywords" content=""/>
-    <meta http-equiv="description" content="农产品质量安全追溯信息系统"/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="keywords" content="" />
+    <meta http-equiv="description" content="监利市公益性服务网" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/front.js"></script>
-    <title>农产品质量安全追溯信息系统</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/iconfont.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/other.css">
+    <title>监利市公益性服务网</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/other.css" />
     <script src="js/header.js"></script>
-</head>
+  </head>
 
-<body class="shichang-list">
-<script>
-    function qkeypress() {
-        var q = $("input[name=q]");
-        if (q.val().trim() != "") {
-            $("input[name=q]").autocomplete("enable");
+  <body class="shichang-list">
+    <script>
+      function qkeypress() {
+        var q = $('input[name=q]');
+        if (q.val().trim() != '') {
+          $('input[name=q]').autocomplete('enable');
         } else {
-            $("input[name=q]").autocomplete("disable");
+          $('input[name=q]').autocomplete('disable');
         }
-    };
-</script>
-<div class="header">
-    <div class="container">
+      }
+    </script>
+    <div class="header">
+      <div class="container">
         <div class="top-bar clearfix">
-            <a href="index.html">
-                <h2 class="web-name">
-                    <span class="logo"></span>
-                    农产品质量安全追溯信息系统
-                </h2>
-            </a>
-            <div class="search-bar">
-                <input class="search-input" type="text" placeholder="请输入查找关键词..."/>
-                <div class="search-colour">
-                    <span class="search-confirm"></span>
-                </div>
+          <a href="index.html">
+            <h2 class="web-name">
+              <span class="logo"></span>
+              监利市公益性服务网
+            </h2>
+          </a>
+          <div class="search-bar">
+            <input class="search-input" type="text" placeholder="请输入查找关键词..." />
+            <div class="search-colour">
+              <span class="search-confirm"></span>
             </div>
-            <div class="header-login">
-                <a class="tc" id="tc" href="login.html">登录</a>
-                <i class="separate">|</i>
-                <a id="td" href="register.html">注册</a>
-            </div>
+          </div>
+          <div class="header-login">
+            <a class="tc" id="tc" href="login.html">登录</a>
+            <i class="separate">|</i>
+            <a id="td" href="register.html">注册</a>
+          </div>
         </div>
-    </div>
-    <div class="nav-boxbg">
+      </div>
+      <div class="nav-boxbg">
         <div class="row">
-            <div class="nav-bg">
-                <ul class="menu clearfix">
-                    <li class="active">
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li class="more">
-                        <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                           data-toggle="">
-                            <span class="text">新闻动态</span>
-                            <i class="font"></i>
-                        </a>
-                        <ul class="menu-child">
-                            <li>
-                                <a href="szyw.html">时政要闻</a>
-                            </li>
-                            <li>
-                                <a href="nyyw.html">农业要闻</a>
-                            </li>
-                            <li>
-                                <a href="qqlb.html">全区联播</a>
-                            </li>
-                            <li>
-                                <a href="zcfg.html">政策法规</a>
-                            </li>
-                            <li>
-                                <!--<a href="jieshao.html">12316介绍
+          <div class="nav-bg">
+            <ul class="menu clearfix">
+              <li class="active">
+                <a href="index.html"> 首页</a>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">新闻动态</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="szyw.html">政策法规</a>
+                  </li>
+                  <li>
+                    <a href="nyyw.html">农业要闻</a>
+                  </li>
+                  <li>
+                    <a href="qqlb.html">全区联播</a>
+                  </li>
+                  <li>
+                    <a href="zcfg.html">政策法规</a>
+                  </li>
+                  <li>
+                    <!--<a href="jieshao.html">12316介绍
                                 </a>-->
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">
-                        <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                           data-toggle="">
-                            <span class="text">市场动态</span>
-                            <i class="font"></i>
-                        </a>
-                        <ul class="menu-child">
-                            <li>
-                                <a href="jiage.html">价格行情</a>
-                            </li>
-                            <li>
-                                <a href="gongying.html">供应信息</a>
-                            </li>
-                            <li>
-                                <a href="qiugou.html">求购信息</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">
-                        <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                           data-toggle="">
-                            <span class="text">专家服务</span>
-                            <i class="font"></i>
-                        </a>
-                        <ul class="menu-child">
-                            <li>
-                                <a href="jrzj.html">今日专家</a>
-                            </li>
-                            <li>
-                                <a href="bzzj.html">本月专家</a>
-                            </li>
-                            <li>
-                                <a href="zjpx.html">专家排行</a>
-                            </li>
-                            <li>
-                                <a href="qbzj.html">全部专家</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">
-                        <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                           data-toggle="">
-                            <span class="text">农业百科</span>
-                            <i class="font"></i>
-                        </a>
-                        <ul class="menu-child">
-                            <li>
-                                <a href="zzjs.html">种植技术</a>
-                            </li>
-                            <li>
-                                <a href="scyzjs.html">水产养殖技术</a>
-                            </li>
-                            <li>
-                                <a href="xmsyjs.html">畜牧兽医技术</a>
-                            </li>
-                            <li>
-                                <a href="njjs.html">农机技术</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="more">
-                    <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                       data-toggle="">
-                        <span class="text">特色农业</span>
-                        <i class="font"></i>
-                    </a>
-                    <ul class="menu-child">
-                        <li>
-                            <a href="ppml.html">品牌目录</a>
-                        </li>
-                        <li>
-                            <a href="spybncp.html">三品一标农产品</a>
-                        </li>
-                        <li>
-                            <a href="wszt.html">网上展厅</a>
-                        </li>
-                        <li>
-                            <a href="xxny.html">休闲农业</a>
-                        </li>
-                    </ul>
-                </li>
-                    <li class="more">
-                        <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self"
-                           data-toggle="">
-                            <span class="text">培训体验</span>
-                            <i class="font"></i>
-                        </a>
-                        <ul class="menu-child">
-                            <li>
-                                <a href="nykj.html">新型职业农民培训</a>
-                            </li>
-                            <li>
-                                <a href="jzpx.html">农民学手机</a>
-                            </li>
-                        </ul>
-                    </li>
-
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">市场动态</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="jiage.html">价格行情</a>
+                  </li>
+                  <li>
+                    <a href="gongying.html">供应信息</a>
+                  </li>
+                  <li>
+                    <a href="qiugou.html">求购信息</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">专家服务</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="jrzj.html">今日专家</a>
+                  </li>
+                  <li>
+                    <a href="bzzj.html">本月专家</a>
+                  </li>
+                  <li>
+                    <a href="zjpx.html">专家排行</a>
+                  </li>
+                  <li>
+                    <a href="qbzj.html">全部专家</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">农业百科</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="zzjs.html">种植技术</a>
+                  </li>
+                  <li>
+                    <a href="scyzjs.html">水产养殖技术</a>
+                  </li>
+                  <li>
+                    <a href="xmsyjs.html">畜牧兽医技术</a>
+                  </li>
+                  <li>
+                    <a href="njjs.html">农机技术</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">特色农业</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="ppml.html">品牌目录</a>
+                  </li>
+                  <li>
+                    <a href="spybncp.html">三品一标农产品</a>
+                  </li>
+                  <li>
+                    <a href="wszt.html">网上展厅</a>
+                  </li>
+                  <li>
+                    <a href="xxny.html">休闲农业</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="more">
+                <a class="dropdown-toggle parent" role="button" aria-haspopup="true" target="_self" data-toggle="">
+                  <span class="text">培训体验</span>
+                  <i class="font"></i>
+                </a>
+                <ul class="menu-child">
+                  <li>
+                    <a href="nykj.html">新型职业农民培训</a>
+                  </li>
+                  <li>
+                    <a href="jzpx.html">农民学手机</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="container m-container">
+      </div>
+      <div class="container m-container">
         <div class="row">
-            <div style="height: 50px;" class="col-md-12">
-                <div class="website">当前位置: <a href="index.html">首页</a> > <a href="xwdtlist.html">新闻动态</a> > <a class="newsTypes"></a>
-                </div>
-                <div class="clear"></div>
+          <div style="height: 50px" class="col-md-12">
+            <div class="website">
+              当前位置: <a href="index.html">首页</a> > <a href="xwdtlist.html">新闻动态</a> > <a class="newsTypes"></a>
             </div>
-            <div style="background-color: #ffffff" class="col-md-9 margin-bottom-40" >
-                <div  class="content-box">
-                    <h2 class="title"></h2>
-                    <div style="padding-top: 10px" class="content-inf">
-                        <span style="font-family: 宋体，SimSun; font-size:12px"  class="author"></span>
-                        <span style="font-family: 宋体，SimSun; font-size:12px" class="updatetime"></span>
-                    </div>
-                    <div class="content-article">
-                        <div style="padding-top: 10px" class="view TRS_UEDITOR trs_paper_default trs_word trs_key4format trs_web">
-                          <p style="font-family: 宋体，SimSun; font-size:18px;" class="content"></p>
-                    </div>
+            <div class="clear"></div>
+          </div>
+          <div style="background-color: #ffffff" class="col-md-9 margin-bottom-40">
+            <div class="content-box">
+              <h2 class="title"></h2>
+              <div style="padding-top: 10px" class="content-inf">
+                <span style="font-family: 宋体，SimSun; font-size: 12px" class="author"></span>
+                <span style="font-family: 宋体，SimSun; font-size: 12px" class="updatetime"></span>
+              </div>
+              <div class="content-article">
+                <div
+                  style="padding-top: 10px"
+                  class="view TRS_UEDITOR trs_paper_default trs_word trs_key4format trs_web"
+                >
+                  <p style="font-family: 宋体，SimSun; font-size: 18px" class="content"></p>
                 </div>
-
+              </div>
             </div>
+          </div>
+          <div style="padding-top: 5px" class="col-md-3">
+            <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg1.jpg" /></div>
+            <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg2.jpg" /></div>
+          </div>
         </div>
-            <div style="padding-top: 5px" class="col-md-3">
-                <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg1.jpg" /></div>
-                <div class="margin-bottom-40"><img class="img-responsive" src="picture/right-gg2.jpg" /></div>
-            </div>
+      </div>
     </div>
-</div>
 
-<div class="footer-box">
-    <div class="container">
+    <div class="footer-box">
+      <div class="container">
         <div class="row">
-            <div class="col-md-8 padding-0">
-                <div class="footer-img"><img src="picture/footer-logo.jpg"/></div>
-                <div class="footer-menu">
-                    <!--<ul class="clearfix">
+          <div class="col-md-8 padding-0">
+            <div class="footer-img"><img src="picture/footer-logo.jpg" /></div>
+            <div class="footer-menu">
+              <!--<ul class="clearfix">
                         <li><a href="#" target="_blank">常见问题</a></li>
                         <li><a href="#" target="_blank">联系我们</a></li>
                         <li><a href="#" target="_blank">法律声明</a></li>
                         <li><a href="#" target="_blank">网站地图</a></li>
                     </ul>  -->
-                    <div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All
-                        Rights Reserved.
-                    </div>
-                </div>
+              <div class="footer-copy" style="margin-top: 30px">
+                Copyright &copy; 2016 FOR WONDERFUL LIFE All Rights Reserved.
+              </div>
             </div>
-            <div class="col-md-4 padding-0">
-                <div class="footer-info">主办方：监利市回族自治区农业农村厅</div>
-                <div class="footer-info">技术支持：中国电信股份有限公司监利市分公司</div>
-                <div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a
-                        href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a>
-                </div>
+          </div>
+          <div class="col-md-4 padding-0">
+            <div class="footer-info">
+              主办方：
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
             </div>
+            <div class="footer-info">技术支持：<a href="http://www.zd-tech.net/">中迪联创科技有限公司</a></div>
+            <div class="footer-info">
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a
+              >&copy; 版权所有 鄂ICP备：1111111号-3
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </body>
+  <script>
+    var url = window.location.search.indexOf('=');
+    var id = window.location.search.substr(url + 1);
 
-
-
-
-
-</body>
-<script>
-
-    var url = window.location.search.indexOf("=");
-    var id = window.location.search.substr(url+1);
-
-      $(document).ready(function () {
-    $.ajax({
-        url: "http://192.168.8.166:8765/api/news/news/"+id,//请求地址
-        dataType: "json",//数据格式
-        type: "get",//请求方式
+    $(document).ready(function () {
+      $.ajax({
+        url: 'http://192.168.8.166:8765/api/news/news/' + id, //请求地址
+        dataType: 'json', //数据格式
+        type: 'get', //请求方式
         cache: true,
         contentType: 'application/json;charset=utf-8',
-
-        async: false,//是否异步请求
-            success: function (data) {
-            console.log(111);
-                $('.title').html(data.data.title);
-                $('.author').html(data.data.author);
-                $('.updatetime').html(data.data.updatetime);
-                $('.newsTypes').html(data.data.type);
-
-                $('.content').html(data.data.content)
-            },
-            error: function (e) {
-            console.log("2222")
-            }
-    })
-  })
-</script>
+        async: false, //是否异步请求
+        success: function (data) {
+          console.log(111);
+          $('.title').html(data.data.title);
+          $('.author').html(data.data.author);
+          $('.updatetime').html(data.data.updatetime);
+          $('.newsTypes').html(data.data.type);
+          $('.content').html(data.data.content);
+        },
+        error: function (e) {
+          console.log('2222');
+        },
+      });
+    });
+  </script>
 </html>

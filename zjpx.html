@@ -1,274 +1,322 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="keywords" content=""/>
-	<meta http-equiv="description" content="监利市三农信息网老百姓的的网站"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/other.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<title>监利市12316三农综合信息服务平台</title>
-	<!--[if lte IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/lte-ie9_9.css">
-	<![endif]-->
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/lt-ie8_9.css">
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<script type="text/javascript">
-        $(function() {
-            Cms.channelViewCount("","212");
-            Cms.siteFlow("", location.href, document.referrer,"true");
-        });
-	</script>
-</head>
-<body class="shichang-list">
-<script>
-    function qkeypress(){
-        var q=$("input[name=q]");
-        if(q.val().trim()!=""){
-            $("input[name=q]").autocomplete("enable");
-        }else{
-            $("input[name=q]").autocomplete("disable");
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="keywords" content="" />
+    <meta http-equiv="description" content="监利市三农信息网老百姓的的网站" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/other.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <title>监利市12316三农综合信息服务平台</title>
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/lte-ie9_9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/lt-ie8_9.css" />
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      $(function () {
+        Cms.channelViewCount('', '212');
+        Cms.siteFlow('', location.href, document.referrer, 'true');
+      });
+    </script>
+  </head>
+  <body class="shichang-list">
+    <script>
+      function qkeypress() {
+        var q = $('input[name=q]');
+        if (q.val().trim() != '') {
+          $('input[name=q]').autocomplete('enable');
+        } else {
+          $('input[name=q]').autocomplete('disable');
         }
-    };
-</script>
+      }
+    </script>
 
-
-<div class="container m-container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="website">当前位置: <a href="index.html">首页</a> > <a>专家服务</a> > <a href="zjpx.html">专家排行</a></div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="ej-menu">
-				<ul>
-					<a href="jrzj.html">今日专家</a>
-					<a href="bzzj.html">本月专家</a>
-					<a class="active"  href="zjpx.html">专家排行</a>
-					<a href="qbzj.html">全部专家</a>
-				</ul>
-			</div>
-			<div class="pic-list-zj">
-				<ul class="clearfix" id="expertRankInfo"></ul>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="footer-box">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 padding-0">
-				<div class="footer-img"><img src="picture/footer-logo.jpg" /></div>
-				<div class="footer-menu">
-					<!--<ul class="clearfix">
+    <div class="container m-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="website">
+            当前位置: <a href="index.html">首页</a> > <a>专家服务</a> > <a href="zjpx.html">专家排行</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ej-menu">
+            <ul>
+              <a href="jrzj.html">今日专家</a>
+              <a href="bzzj.html">本月专家</a>
+              <a class="active" href="zjpx.html">专家排行</a>
+              <a href="qbzj.html">全部专家</a>
+            </ul>
+          </div>
+          <div class="pic-list-zj">
+            <ul class="clearfix" id="expertRankInfo"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 padding-0">
+            <div class="footer-img"><img src="picture/footer-logo.jpg" /></div>
+            <div class="footer-menu">
+              <!--<ul class="clearfix">
 						<li><a href="#" target="_blank">常见问题</a></li>
 						<li><a href="#" target="_blank">联系我们</a></li>
 						<li><a href="#" target="_blank">法律声明</a></li>
 						<li><a href="#" target="_blank">网站地图</a></li>
 					</ul>  -->
-					<div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All Rights Reserved.</div>
-				</div>
-			</div>
-			<div class="col-md-4 padding-0">
-				<div class="footer-info">主办方：监利市回族自治区农业农村厅 </div>
-				<div class="footer-info">技术支持：中国电信股份有限公司监利市分公司 </div>
-				<div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a></div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--ad-ceshi-->
-<!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
+              <div class="footer-copy" style="margin-top: 30px">
+                Copyright &copy; 2016 FOR WONDERFUL LIFE All Rights Reserved.
+              </div>
+            </div>
+          </div>
+           <div class="footer-info">
+              主办方：
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
+            </div>
+            <div class="footer-info">技术支持：<a href="http://www.zd-tech.net/">中迪联创科技有限公司</a></div>
+            <div class="footer-info">
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a
+              >&copy; 版权所有 鄂ICP备：1111111号-3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--ad-ceshi-->
+    <!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
 	<script type="text/javascript" src="js/adspace.js"></script>
 </div>-->
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"1","bdPos":"left","bdTop":"135"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script><script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/kkpager.js"></script>
-<div class="right-fixed">
-	<ul>
-		<li class="weixin">
-			<i class="iconfont">&#xe606;</i>
-			<div class="weixin-logo"><img src="picture/ewm1.png" /></div>
-		</li>
-		<li class="link">
-			<a href="http://www.yn12316.net/" target="_blank"><img src="picture/entrance.png" /></a>
-		</li>
-		<li class="back-top"><i class="iconfont">&#xe64f;</i></li>
-	</ul>
-	<script type="text/javascript">
-        $(function(){
-            var $body = $(document.body);;
-            var $bottomTools = $('.right-fixed');
-            $(window).scroll(function () {
-                var scrollHeight = $(document).height();
-                var scrollTop = $(window).scrollTop();
-                scrollTop > 50 ? $(".back-top").slideDown(300).css("display","block") : $(".back-top").slideUp(300);
-            });
-            $('.back-top').click(function (e) {
-                e.preventDefault();
-                $('html,body').animate({ scrollTop:0});
-            });
-
+    <script>
+      window._bd_share_config = {
+        common: { bdSnsKey: {}, bdText: '', bdMini: '2', bdMiniList: false, bdPic: '', bdStyle: '0', bdSize: '16' },
+        slide: { type: 'slide', bdImg: '1', bdPos: 'left', bdTop: '135' },
+        image: { viewList: ['qzone', 'tsina', 'tqq', 'renren', 'weixin'], viewText: '分享到：', viewSize: '16' },
+        selectShare: { bdContainerClass: null, bdSelectMiniList: ['qzone', 'tsina', 'tqq', 'renren', 'weixin'] },
+      };
+      with (document)
+        (0)[
+          ((getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+            'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5))
+        ];
+    </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/kkpager.js"></script>
+    <div class="right-fixed">
+      <ul>
+        <li class="weixin">
+          <i class="iconfont">&#xe606;</i>
+          <div class="weixin-logo"><img src="picture/ewm1.png" /></div>
+        </li>
+        <li class="link">
+          <a href="http://www.yn12316.net/" target="_blank"><img src="picture/entrance.png" /></a>
+        </li>
+        <li class="back-top"><i class="iconfont">&#xe64f;</i></li>
+      </ul>
+      <script type="text/javascript">
+        $(function () {
+          var $body = $(document.body);
+          var $bottomTools = $('.right-fixed');
+          $(window).scroll(function () {
+            var scrollHeight = $(document).height();
+            var scrollTop = $(window).scrollTop();
+            scrollTop > 50 ? $('.back-top').slideDown(300).css('display', 'block') : $('.back-top').slideUp(300);
+          });
+          $('.back-top').click(function (e) {
+            e.preventDefault();
+            $('html,body').animate({ scrollTop: 0 });
+          });
         });
-	</script>
-</div><script>
-    $(document).ready(function(){
-        var return_none = "1";
-        var list=$(".text");
-        var channel_name ="专家排行";
-        for (i=0;i<$(".text").length;i++) {
-            var active =$(".text").eq(i).text();
-            if(active==channel_name){
-                $("li").removeClass("active");
-                list.eq(i).parents("li").addClass("active");
-                return_none="0";
+      </script>
+    </div>
+    <script>
+      $(document).ready(function () {
+        var return_none = '1';
+        var list = $('.text');
+        var channel_name = '专家排行';
+        for (i = 0; i < $('.text').length; i++) {
+          var active = $('.text').eq(i).text();
+          if (active == channel_name) {
+            $('li').removeClass('active');
+            list.eq(i).parents('li').addClass('active');
+            return_none = '0';
+          }
+        }
+        var channer_parent_name = '专家服务';
+        if (return_none != '0') {
+          for (i = 0; i < $('.text').length; i++) {
+            var active = $('.text').eq(i).text();
+            if (active == channer_parent_name) {
+              $('li').removeClass('active');
+              list.eq(i).parents('li').addClass('active');
+              return_none = '0';
             }
-        };
-        var channer_parent_name="专家服务";
-        if(return_none!="0"){
-            for (i=0;i<$(".text").length;i++) {
-                var active =$(".text").eq(i).text();
-                if(active==channer_parent_name){
-                    $("li").removeClass("active");
-                    list.eq(i).parents("li").addClass("active");
-                    return_none="0";
-                }
-            }
-        };
-    });
-</script>
-<script>
-
-    $(function() {
+          }
+        }
+      });
+    </script>
+    <script>
+      $(function () {
         queryExpertRank();
-    });
-    /*
-    * 	专家--乱序 */
-    function queryExpertRank() {
-        $("#expertRankInfo").empty();
+      });
+      /*
+       * 	专家--乱序 */
+      function queryExpertRank() {
+        $('#expertRankInfo').empty();
         $.ajax({
-            //http://192.168.8.166:8765/api/consultation/expert/page
-			//11.29修改新接口
-            url : "http://192.168.8.166:8765/api/consultation/expert/orderByScore",
-            type : "GET",
-            async:false,
-            cache: true,
-            dataType : "json",
+          //http://192.168.8.166:8765/api/consultation/expert/page
+          //11.29修改新接口
+          url: 'http://192.168.8.166:8765/api/consultation/expert/orderByScore',
+          type: 'GET',
+          async: false,
+          cache: true,
+          dataType: 'json',
 
-            contentType: "application/json;charset=utf-8",
-            success : function(data) {
-                console.log("55555");
-                console.log(data.data.length);
-                console.log(data.data[0].score);
-                var html="";
-                if(data.data.length>0){
-                    for(var i=0;i<data.data.length;i++){
-                        console.log(11111111);
-                        console.log(data.data[0].expert.name);
+          contentType: 'application/json;charset=utf-8',
+          success: function (data) {
+            console.log('55555');
+            console.log(data.data.length);
+            console.log(data.data[0].score);
+            var html = '';
+            if (data.data.length > 0) {
+              for (var i = 0; i < data.data.length; i++) {
+                console.log(11111111);
+                console.log(data.data[0].expert.name);
 
-                        var image =data.data[i].image;
+                var image = data.data[i].image;
 
-                        if(image==""||image==null){
-                            image="picture/logo.png";//默认头像
-                        }
+                if (image == '' || image == null) {
+                  image = 'picture/logo.png'; //默认头像
+                }
 
-                        var  official = data.data[i].expert.official;
-                        official = Trim(official);
-                        official = official.substring(0,5)+"...";
-                        var  business = data.data[i].expert.business;
-                        business = Trim(business);
-                        business = business.substring(0,5)+"...";
-                        var  wechat=	 data.data[i].expert.wechat;
-                        wechat = Trim(wechat);
-                        wechat = wechat.substring(0,8)+"...";
-                        var rankIco = "";
-                        if(i == 0 ){
-                            rankIco = "<img class='rankIco' src='picture/rank_1.png'>";
-                        }else if(i ==1){
-                            rankIco = "<img class='rankIco' src='picture/rank_2.png'>";
-                        }else if(i ==2){
-                            rankIco = "<img class='rankIco' src='picture/rank_3.png'>";
-                        }
+                var official = data.data[i].expert.official;
+                official = Trim(official);
+                official = official.substring(0, 5) + '...';
+                var business = data.data[i].expert.business;
+                business = Trim(business);
+                business = business.substring(0, 5) + '...';
+                var wechat = data.data[i].expert.wechat;
+                wechat = Trim(wechat);
+                wechat = wechat.substring(0, 8) + '...';
+                var rankIco = '';
+                if (i == 0) {
+                  rankIco = "<img class='rankIco' src='picture/rank_1.png'>";
+                } else if (i == 1) {
+                  rankIco = "<img class='rankIco' src='picture/rank_2.png'>";
+                } else if (i == 2) {
+                  rankIco = "<img class='rankIco' src='picture/rank_3.png'>";
+                }
 
-                        html+="<li class='col-md-4 expertRank'>"+
-                            "<div class='zj-pic'><a href='consultation.html?id="+data.data[i].id+"' target='_blank'><img class='img-responsive' src='"+image+"'></a><p><button onclick='checkIsLogin("+data.data[i].expert.id+")'>我要咨询</button></p></div>"+
-                            "<div class='zj-info'>"+
-                            "<a href='consultation.html?id="+data.data[i].expert.id+"' target='_blank'>"+data.data[i].expert.name+"</a>"+
-                            "<p title=\""+data.data[i].expert.official+"\"><label>职务/职称：</label>"+official+"</p>"+
-                            "<p title=\""+data.data[i].expert.business+"\"><label>业务专长：</label>"+business+"</p>"+
-                            "<p><label>联系方式：</label>"+data.data[i].expert.telephone+"</p>"+
-                            "<p title=\""+data.data[i].expert.wechat+"\"><label>微信号码：</label>"+wechat+"</p>"+
-                            "<p><label>服务区县：</label>"+data.data[i].expert.location+"</p>"+
-                            "<p><label>综合评分：</label>"+data.data[i].score+"</p>"+
-                            /*"<p class=\"colligate_star\"><label>综合评分：</label>"+retStar(data.data.rows[i].star)+"</p>"+
+                html +=
+                  "<li class='col-md-4 expertRank'>" +
+                  "<div class='zj-pic'><a href='consultation.html?id=" +
+                  data.data[i].id +
+                  "' target='_blank'><img class='img-responsive' src='" +
+                  image +
+                  "'></a><p><button onclick='checkIsLogin(" +
+                  data.data[i].expert.id +
+                  ")'>我要咨询</button></p></div>" +
+                  "<div class='zj-info'>" +
+                  "<a href='consultation.html?id=" +
+                  data.data[i].expert.id +
+                  "' target='_blank'>" +
+                  data.data[i].expert.name +
+                  '</a>' +
+                  '<p title="' +
+                  data.data[i].expert.official +
+                  '"><label>职务/职称：</label>' +
+                  official +
+                  '</p>' +
+                  '<p title="' +
+                  data.data[i].expert.business +
+                  '"><label>业务专长：</label>' +
+                  business +
+                  '</p>' +
+                  '<p><label>联系方式：</label>' +
+                  data.data[i].expert.telephone +
+                  '</p>' +
+                  '<p title="' +
+                  data.data[i].expert.wechat +
+                  '"><label>微信号码：</label>' +
+                  wechat +
+                  '</p>' +
+                  '<p><label>服务区县：</label>' +
+                  data.data[i].expert.location +
+                  '</p>' +
+                  '<p><label>综合评分：</label>' +
+                  data.data[i].score +
+                  '</p>' +
+                  /*"<p class=\"colligate_star\"><label>综合评分：</label>"+retStar(data.data.rows[i].star)+"</p>"+
                             "<p><label>咨询次数：</label>"+data.data.rows[i].req+"</p>"+
                             "<p><label>回复率：</label>"+data.data.rows[i].percentage+"</p>"+rankIco+*/
-                            "</div>"
-                        "</li>";
-                    }
-                }else{
-                    html+="<div>暂无专家信息！</div>";
-                }
-                $("#expertRankInfo").append(html);
-            },
-
-            error : function(e) {
-                console.info(e);
+                  '</div>';
+                ('</li>');
+              }
+            } else {
+              html += '<div>暂无专家信息！</div>';
             }
-        });
-    }
-    function retStar (index){
-        if(index==undefined||index==null||index==''){
-            index = 0;
-        }
-        switch(index)
-        {
-            case 1:
-                return "<span class=\"pxStar\"><span class=\"star_score_full\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span></span>";
-                break;
-            case 2:
-                return "<span class=\"pxStar\"><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span></span>";
-                break;
-            case 3:
-                return "<span class=\"pxStar\"><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span></span>";
-                break;
-            case 4:
-                return "<span class=\"pxStar\"><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score\"></span></span>";
-                break;
-            case 5:
-                return "<span class=\"pxStar\"><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span><span class=\"star_score_full\"></span></span>";
-                break;
-            default:
-                return "<span class=\"pxStar\"><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span><span class=\"star_score\"></span></span>";
-        }
-    }
-    function Trim(str){
-        return str.replace(/(^\s*)|(\s*$)/g, "");
-    }
+            $('#expertRankInfo').append(html);
+          },
 
-    function checkIsLogin(_userid){
-        var url="/expert.jspx?id="+_userid;
-        if(confirm("您好！请先登录后再咨询。")){
-            window.location.href="/login.jspx?returnUrl="+url;
+          error: function (e) {
+            console.info(e);
+          },
+        });
+      }
+      function retStar(index) {
+        if (index == undefined || index == null || index == '') {
+          index = 0;
         }
-    }
-</script>
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/highcharts.js"></script>
-<script src="js/zixun-jiaodian.js"></script>
-<script src="js/header.js"></script>
-</body>
+        switch (index) {
+          case 1:
+            return '<span class="pxStar"><span class="star_score_full"></span><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span></span>';
+            break;
+          case 2:
+            return '<span class="pxStar"><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span></span>';
+            break;
+          case 3:
+            return '<span class="pxStar"><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score"></span><span class="star_score"></span></span>';
+            break;
+          case 4:
+            return '<span class="pxStar"><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score"></span></span>';
+            break;
+          case 5:
+            return '<span class="pxStar"><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span><span class="star_score_full"></span></span>';
+            break;
+          default:
+            return '<span class="pxStar"><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span><span class="star_score"></span></span>';
+        }
+      }
+      function Trim(str) {
+        return str.replace(/(^\s*)|(\s*$)/g, '');
+      }
+
+      function checkIsLogin(_userid) {
+        var url = '/expert.jspx?id=' + _userid;
+        if (confirm('您好！请先登录后再咨询。')) {
+          window.location.href = '/login.jspx?returnUrl=' + url;
+        }
+      }
+    </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/zixun-jiaodian.js"></script>
+    <script src="js/header.js"></script>
+  </body>
 </html>

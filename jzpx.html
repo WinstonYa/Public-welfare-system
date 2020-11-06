@@ -1,192 +1,192 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="keywords" content=""/>
-	<meta http-equiv="description" content="监利市三农信息网老百姓的的网站"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/other.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<!--分页-->
-	<link rel="stylesheet" type="text/css" href="./pagination/pagination.css" media="screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="keywords" content="" />
+    <meta http-equiv="description" content="监利市三农信息网老百姓的的网站" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/other.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <!--分页-->
+    <link rel="stylesheet" type="text/css" href="./pagination/pagination.css" media="screen" />
 
-	<title>监利市12316三农综合信息服务平台</title>
-	<!--[if lte IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/lte-ie9_19.css">
-	<![endif]-->
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/lt-ie8_19.css">
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    <title>监利市12316三农综合信息服务平台</title>
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/lte-ie9_19.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="css/lt-ie8_19.css" />
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 
-	<style>
-		.shichang-listWhite {
-			/*background: url(../picture/header_bg.jpg) top center;*/
-			background-size: 2000px auto;
-		}
+    <style>
+      .shichang-listWhite {
+        /*background: url(../picture/header_bg.jpg) top center;*/
+        background-size: 2000px auto;
+      }
 
-		.innerSpUlBox {
-			width: 1200px;
-		}
+      .innerSpUlBox {
+        width: 1200px;
+      }
 
-		.innerSpUlBox {
-			width: 1300px;
-			margin-left: -7px;
-			overflow: hidden;
-			padding-bottom: 0px;
-		}
+      .innerSpUlBox {
+        width: 1300px;
+        margin-left: -7px;
+        overflow: hidden;
+        padding-bottom: 0px;
+      }
 
-		/*.innerSpUlBox li {
+      /*.innerSpUlBox li {
             width: 264px;
             margin-left: 0px;
             margin-right: 20px;
             height: 240px;
         }*/
 
-		.innerSpUlBox li {
-			position: relative;
-			float: left;
-			margin-left: 7px;
-			width: 280px;
-			margin-top: 10px;
-			height: 208px;
-			border: 1px solid #e3e3e3;
-		}
+      .innerSpUlBox li {
+        position: relative;
+        float: left;
+        margin-left: 7px;
+        width: 280px;
+        margin-top: 10px;
+        height: 208px;
+        border: 1px solid #e3e3e3;
+      }
 
-		.innerSpUlBox li:hover {
-			background: #f5faf7;
-		}
+      .innerSpUlBox li:hover {
+        background: #f5faf7;
+      }
 
-		.innerSpUlBox li a {
-			display: block;
-			cursor: pointer;
-			position: relative;
-		}
+      .innerSpUlBox li a {
+        display: block;
+        cursor: pointer;
+        position: relative;
+      }
 
-		a {
-			text-decoration: none;
-		}
+      a {
+        text-decoration: none;
+      }
 
-		.innerSpUlBox li img.mainI {
-			width: 262px;
-			height: 150px;
-		}
+      .innerSpUlBox li img.mainI {
+        width: 262px;
+        height: 150px;
+      }
 
-		.innerSpUlBox li a i {
-			width: 25px;
-			height: 25px;
-			display: block;
-			position: absolute;
-			margin-left: 5px;
-			top: 78px;
-		}
+      .innerSpUlBox li a i {
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        margin-left: 5px;
+        top: 78px;
+      }
 
-		/* .listCon .innerSpUlBox li a span {
+      /* .listCon .innerSpUlBox li a span {
              font-size: 18px;
              line-height: 30px;
          }*/
 
-		.innerSpUlBox li a span {
-			display: block;
-			padding: 8px 23px 0;
-			line-height: 24px;
-			color: #333;
-			font-size: 15px;
-			display: -webkit-box;
-			-webkit-box-orient: vertical;
-			-webkit-line-clamp: 2;
-			overflow: hidden;
-		}
+      .innerSpUlBox li a span {
+        display: block;
+        padding: 8px 23px 0;
+        line-height: 24px;
+        color: #333;
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
 
-		/*.listCon .innerSpUlBox li .playBtn {
+      /*.listCon .innerSpUlBox li .playBtn {
             position: absolute;
             top: 42px;
             left: 108px;
         }*/
 
-		.innerSpUlBox li .playBtn {
-			position: absolute;
-			top: 35px;
-			left: 107px;
-		}
+      .innerSpUlBox li .playBtn {
+        position: absolute;
+        top: 35px;
+        left: 107px;
+      }
 
-		ul, li {
-			list-style: none;
-		}
+      ul,
+      li {
+        list-style: none;
+      }
 
-		.innerSpUlBox li a img.mainI {
-			display: block;
-			margin: 0 auto;
-			width: 235px;
-			height: 133px;
-			margin-top: 9px;
-		}
+      .innerSpUlBox li a img.mainI {
+        display: block;
+        margin: 0 auto;
+        width: 235px;
+        height: 133px;
+        margin-top: 9px;
+      }
 
-		.list_t {
-			font-size: 22px;
-			color: #315a00;
-			height: 60px;
-			line-height: 60px;
-			font-weight: bold;
-			background: #f8f8f8 url(./images/spsn_indexLmIcon_v2020.png) no-repeat 20px center;
-			padding-left: 70px;
-			/*border-top: 1px solid #64ae33;*/
-		}
-	</style>
-</head>
-<body class="shichang-listWhite">
-<script>
-	function qkeypress() {
-		var q = $("input[name=q]");
-		if (q.val().trim() != "") {
-			$("input[name=q]").autocomplete("enable");
-		} else {
-			$("input[name=q]").autocomplete("disable");
-		}
-	};
-</script>
+      .list_t {
+        font-size: 22px;
+        color: #315a00;
+        height: 60px;
+        line-height: 60px;
+        font-weight: bold;
+        background: #f8f8f8 url(./images/spsn_indexLmIcon_v2020.png) no-repeat 20px center;
+        padding-left: 70px;
+        /*border-top: 1px solid #64ae33;*/
+      }
+    </style>
+  </head>
+  <body class="shichang-listWhite">
+    <script>
+      function qkeypress() {
+        var q = $('input[name=q]');
+        if (q.val().trim() != '') {
+          $('input[name=q]').autocomplete('enable');
+        } else {
+          $('input[name=q]').autocomplete('disable');
+        }
+      }
+    </script>
 
-<div class="container m-container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="website">当前位置: <a href="./index.html">首页</a> >
-				<a href="#">培训体验</a> >
-				<a href="#">农业科技</a>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="list_t">
-				讲座培训
-			</div>
-			<div style="width: 1200px;padding-bottom: 20px">
-				<!--视频-->
-				<ul class="innerSpUlBox" id="innerSpUlBox">
-					<li>
-						<a href="./201906/t20190626_6319426.htm" target="_blank">
-							<img class="mainI"
-								 src="http://www.moa.gov.cn/masvod/public/2019/06/26/78479.images/v78479_b1561537712418.jpg"
-								 alt="">
-							<i></i>
-							<span>设施番茄晚疫病的发生与防治</span>
-							<img class="playBtn" src="./images/spsn_indexPlay_v2020.png" alt="">
-						</a>
-					</li>
-
-				</ul>
-				<div class="m-style M-box4" style="margin:20px 0px"></div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--<script>
+    <div class="container m-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="website">
+            当前位置: <a href="./index.html">首页</a> > <a href="#">培训体验</a> >
+            <a href="#">农业科技</a>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="list_t">讲座培训</div>
+          <div style="width: 1200px; padding-bottom: 20px">
+            <!--视频-->
+            <ul class="innerSpUlBox" id="innerSpUlBox">
+              <li>
+                <a href="./201906/t20190626_6319426.htm" target="_blank">
+                  <img
+                    class="mainI"
+                    src="http://www.moa.gov.cn/masvod/public/2019/06/26/78479.images/v78479_b1561537712418.jpg"
+                    alt=""
+                  />
+                  <i></i>
+                  <span>设施番茄晚疫病的发生与防治</span>
+                  <img class="playBtn" src="./images/spsn_indexPlay_v2020.png" alt="" />
+                </a>
+              </li>
+            </ul>
+            <div class="m-style M-box4" style="margin: 20px 0px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<script>
 $(document).ready(function(){
 	var return_none = "1";
 	var list=$(".text");
@@ -213,184 +213,200 @@ $(document).ready(function(){
 });
 </script>
 -->
-<div class="footer-box">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 padding-0">
-				<div class="footer-img"><img src="picture/footer-logo.jpg"/></div>
-				<div class="footer-menu">
-					<!--<ul class="clearfix">
+    <div class="footer-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 padding-0">
+            <div class="footer-img"><img src="picture/footer-logo.jpg" /></div>
+            <div class="footer-menu">
+              <!--<ul class="clearfix">
                         <li><a href="#" target="_blank">常见问题</a></li>
                         <li><a href="#" target="_blank">联系我们</a></li>
                         <li><a href="#" target="_blank">法律声明</a></li>
                         <li><a href="#" target="_blank">网站地图</a></li>
                     </ul>  -->
-					<div class="footer-copy" style="margin-top: 30px;">Copyright &copy; 2016 FOR WONDERFUL LIFE All
-						Rights Reserved.
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 padding-0">
-				<div class="footer-info">主办方：监利市回族自治区农业农村厅</div>
-				<div class="footer-info">技术支持：中国电信股份有限公司监利市分公司</div>
-				<div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a
-						href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--ad-ceshi-->
-<!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
+              <div class="footer-copy" style="margin-top: 30px">
+                Copyright &copy; 2016 FOR WONDERFUL LIFE All Rights Reserved.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 padding-0">
+            <div class="footer-info">
+              主办方：
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
+            </div>
+            <div class="footer-info">技术支持：<a href="http://www.zd-tech.net/">中迪联创科技有限公司</a></div>
+            <div class="footer-info">
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a
+              >&copy; 版权所有 鄂ICP备：1111111号-3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--ad-ceshi-->
+    <!--<div style="position: fixed; left: 0; bottom: 200px; width: 60px; height: 150px;">
 	<script type="text/javascript" src="js/adspace.js"></script>
 </div>-->
-<script>window._bd_share_config = {
-	"common": {
-		"bdSnsKey": {},
-		"bdText": "",
-		"bdMini": "2",
-		"bdMiniList": false,
-		"bdPic": "",
-		"bdStyle": "0",
-		"bdSize": "16"
-	},
-	"slide": {"type": "slide", "bdImg": "1", "bdPos": "left", "bdTop": "135"},
-	"image": {"viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16"},
-	"selectShare": {"bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]}
-};
-with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--<div class="right-fixed">-->
-<!--    <ul>-->
-<!--        <li class="weixin">-->
-<!--            <i class="iconfont">&#xe606;</i>-->
-<!--            <div class="weixin-logo"><img src="picture/ewm1.png"/></div>-->
-<!--        </li>-->
-<!--        <li class="link">-->
-<!--            <a href="http://www.yn12316.net/" target="_blank"><img src="picture/entrance.png"/></a>-->
-<!--        </li>-->
-<!--        <li class="back-top"><i class="iconfont">&#xe64f;</i></li>-->
-<!--    </ul>-->
-<!--    <script type="text/javascript">-->
-<!--        $(function () {-->
-<!--            var $body = $(document.body);-->
-<!--            ;-->
-<!--            var $bottomTools = $('.right-fixed');-->
-<!--            $(window).scroll(function () {-->
-<!--                var scrollHeight = $(document).height();-->
-<!--                var scrollTop = $(window).scrollTop();-->
-<!--                scrollTop > 50 ? $(".back-top").slideDown(300).css("display", "block") : $(".back-top").slideUp(300);-->
-<!--            });-->
-<!--            $('.back-top').click(function (e) {-->
-<!--                e.preventDefault();-->
-<!--                $('html,body').animate({scrollTop: 0});-->
-<!--            });-->
+    <script>
+      window._bd_share_config = {
+        common: {
+          bdSnsKey: {},
+          bdText: '',
+          bdMini: '2',
+          bdMiniList: false,
+          bdPic: '',
+          bdStyle: '0',
+          bdSize: '16',
+        },
+        slide: { type: 'slide', bdImg: '1', bdPos: 'left', bdTop: '135' },
+        image: { viewList: ['qzone', 'tsina', 'tqq', 'renren', 'weixin'], viewText: '分享到：', viewSize: '16' },
+        selectShare: { bdContainerClass: null, bdSelectMiniList: ['qzone', 'tsina', 'tqq', 'renren', 'weixin'] },
+      };
+      with (document)
+        (0)[
+          ((getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src =
+            'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5))
+        ];
+    </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<div class="right-fixed">-->
+    <!--    <ul>-->
+    <!--        <li class="weixin">-->
+    <!--            <i class="iconfont">&#xe606;</i>-->
+    <!--            <div class="weixin-logo"><img src="picture/ewm1.png"/></div>-->
+    <!--        </li>-->
+    <!--        <li class="link">-->
+    <!--            <a href="http://www.yn12316.net/" target="_blank"><img src="picture/entrance.png"/></a>-->
+    <!--        </li>-->
+    <!--        <li class="back-top"><i class="iconfont">&#xe64f;</i></li>-->
+    <!--    </ul>-->
+    <!--    <script type="text/javascript">-->
+    <!--        $(function () {-->
+    <!--            var $body = $(document.body);-->
+    <!--            ;-->
+    <!--            var $bottomTools = $('.right-fixed');-->
+    <!--            $(window).scroll(function () {-->
+    <!--                var scrollHeight = $(document).height();-->
+    <!--                var scrollTop = $(window).scrollTop();-->
+    <!--                scrollTop > 50 ? $(".back-top").slideDown(300).css("display", "block") : $(".back-top").slideUp(300);-->
+    <!--            });-->
+    <!--            $('.back-top').click(function (e) {-->
+    <!--                e.preventDefault();-->
+    <!--                $('html,body').animate({scrollTop: 0});-->
+    <!--            });-->
 
-<!--        });-->
-<!--    </script>-->
-<!--</div>-->
-<!--添加菜单栏 active状态-->
-<script>
-	$(document).ready(function () {
-		var return_none = "1";
-		var list = $(".text");
-		var channel_name = "农业科技";
-		for (i = 0; i < $(".text").length; i++) {
-			var active = $(".text").eq(i).text();
-			if (active == channel_name) {
-				$("li").removeClass("active");
-				list.eq(i).parents("li").addClass("active");
-				return_none = "0";
-			}
-		}
-		;
-		var channer_parent_name = "培训体验";
-		if (return_none != "0") {
-			for (i = 0; i < $(".text").length; i++) {
-				var active = $(".text").eq(i).text();
-				if (active == channer_parent_name) {
-					$("li").removeClass("active");
-					list.eq(i).parents("li").addClass("active");
-					return_none = "0";
-				}
-			}
-		}
-		;
-	});
-</script>
-<script src="js/pagination/jquery.pagination.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/highcharts.js"></script>
-<script src="js/zixun-jiaodian.js"></script>
-<script src="js/header.js"></script>
-<script src="js/commom/api.js"></script>
-<script>
-	$(function () {
-		var data = {
-			page : 1,
-			limit : 6,
-			type:"讲座培训",
-		};
-		var total;
-		InitList();//初始化列表数据
-		function InitList(){
-			$("#innerSpUlBox").empty();
-			$.ajax({
-				url: InterfaceDZSW + "/video/videosByPage",//请求地址
-				dataType: "json",//数据格式
-				type: "get",//请求方式
-				cache: true,
-				contentType: 'application/json;charset=utf-8',
-				async: false,//是否异步请求
-				data: data,
-				success: function (data) {
-					var img;
-					for (var i = 0; i < data.data.rows.length; i++){
-						var updatetime = data.data.rows[i].pubTime;
-						var date = updatetime.substr(0,10);
-						if (data.data.rows[i].thumbnail == undefined || data.data.rows[i].thumbnail == null){
-							img = "./images/zhanwei.png"
-						}else {
-							img = "http://" + data.data.rows[i].thumbnail;
-						}
+    <!--        });-->
+    <!--    </script>-->
+    <!--</div>-->
+    <!--添加菜单栏 active状态-->
+    <script>
+      $(document).ready(function () {
+        var return_none = '1';
+        var list = $('.text');
+        var channel_name = '农业科技';
+        for (i = 0; i < $('.text').length; i++) {
+          var active = $('.text').eq(i).text();
+          if (active == channel_name) {
+            $('li').removeClass('active');
+            list.eq(i).parents('li').addClass('active');
+            return_none = '0';
+          }
+        }
+        var channer_parent_name = '培训体验';
+        if (return_none != '0') {
+          for (i = 0; i < $('.text').length; i++) {
+            var active = $('.text').eq(i).text();
+            if (active == channer_parent_name) {
+              $('li').removeClass('active');
+              list.eq(i).parents('li').addClass('active');
+              return_none = '0';
+            }
+          }
+        }
+      });
+    </script>
+    <script src="js/pagination/jquery.pagination.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/zixun-jiaodian.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/commom/api.js"></script>
+    <script>
+      $(function () {
+        var data = {
+          page: 1,
+          limit: 6,
+          type: '讲座培训',
+        };
+        var total;
+        InitList(); //初始化列表数据
+        function InitList() {
+          $('#innerSpUlBox').empty();
+          $.ajax({
+            url: InterfaceDZSW + '/video/videosByPage', //请求地址
+            dataType: 'json', //数据格式
+            type: 'get', //请求方式
+            cache: true,
+            contentType: 'application/json;charset=utf-8',
+            async: false, //是否异步请求
+            data: data,
+            success: function (data) {
+              var img;
+              for (var i = 0; i < data.data.rows.length; i++) {
+                var updatetime = data.data.rows[i].pubTime;
+                var date = updatetime.substr(0, 10);
+                if (data.data.rows[i].thumbnail == undefined || data.data.rows[i].thumbnail == null) {
+                  img = './images/zhanwei.png';
+                } else {
+                  img = 'http://' + data.data.rows[i].thumbnail;
+                }
 
-						$("#innerSpUlBox").append('<li>\n' +
-								'                        <a href="./commonvideo.html?'+ data.data.rows[i].id +'" target="_blank">\n' +
-								'                            <img class="mainI"\n' +
-								'                                 src="'+ img +'"\n' +
-								'                                 alt="">\n' +
-								'                            <i></i>\n' +
-								'                            <span>'+ data.data.rows[i].videoName +'</span>\n' +
-								'                            <img class="playBtn" src="./images/spsn_indexPlay_v2020.png" alt="">\n' +
-								'                        </a>\n' +
-								'                    </li>')
-					}
-					total = data.data.total;
-				},
-				error: function (e) {
-					console.log(e);
-				}
-			})
-		}
-		$('.M-box4').pagination({
-			//总条数
-			totalData: total,
-			//每页条数
-			showData:6,
-			//固定页码数
-			mode:"unfixed",
-			count:3,
-			isHide:true,
-			//是否一直显示上一页下一页
-			keepShowPN:false,
-			callback: function (api) {
-				data.page = api.getCurrent();
-				InitList();
-			}
-		});
-	})
-</script>
-</body>
+                $('#innerSpUlBox').append(
+                  '<li>\n' +
+                    '                        <a href="./commonvideo.html?' +
+                    data.data.rows[i].id +
+                    '" target="_blank">\n' +
+                    '                            <img class="mainI"\n' +
+                    '                                 src="' +
+                    img +
+                    '"\n' +
+                    '                                 alt="">\n' +
+                    '                            <i></i>\n' +
+                    '                            <span>' +
+                    data.data.rows[i].videoName +
+                    '</span>\n' +
+                    '                            <img class="playBtn" src="./images/spsn_indexPlay_v2020.png" alt="">\n' +
+                    '                        </a>\n' +
+                    '                    </li>'
+                );
+              }
+              total = data.data.total;
+            },
+            error: function (e) {
+              console.log(e);
+            },
+          });
+        }
+        $('.M-box4').pagination({
+          //总条数
+          totalData: total,
+          //每页条数
+          showData: 6,
+          //固定页码数
+          mode: 'unfixed',
+          count: 3,
+          isHide: true,
+          //是否一直显示上一页下一页
+          keepShowPN: false,
+          callback: function (api) {
+            data.page = api.getCurrent();
+            InitList();
+          },
+        });
+      });
+    </script>
+  </body>
 </html>

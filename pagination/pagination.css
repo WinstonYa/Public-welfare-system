@@ -4,7 +4,7 @@
     text-align: center;
     zoom: 1;
     float: right;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .m-style:before,
@@ -85,6 +85,9 @@
     font-family: "Simsun";
     font-size: 16px;
     font-weight: bold;
+
+    /*防止第一页，点击上一页时出现下划线*/
+    text-decoration:none;
 }
 
 .now,

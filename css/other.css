@@ -224,12 +224,9 @@
     color: #fff;
 }
 
-.newslist {
-}
-
 .newslist ul li {
     border-bottom: 1px solid #f2f2f2;
-    padding: 15px 10px 5px 15px;
+    padding: 15px;
 }
 
 .newslist ul li a.lanmu {

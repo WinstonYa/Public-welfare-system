@@ -90,9 +90,15 @@ function qkeypress(){
 				</div>
 			</div>
 			<div class="col-md-4 padding-0">
-				<div class="footer-info">主办方：监利市回族自治区农业农村厅 </div>
-				<div class="footer-info">技术支持：中国电信股份有限公司监利市分公司 </div>
-				<div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a></div>
+			 <div class="footer-info">
+              主办方：
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
+            </div>
+            <div class="footer-info">技术支持：<a href="http://www.zd-tech.net/">中迪联创科技有限公司</a></div>
+            <div class="footer-info">
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a
+              >&copy; 版权所有 鄂ICP备：1111111号-3
+            </div>
 			</div>
 		</div>
 	</div>
@@ -125,98 +131,99 @@ $(document).ready(function(){
 			return_none="0";
 		}
 	};
-FreeMarker template error (DEBUG mode; use RETHROW in production!):
-The following has evaluated to null or missing:
-==>   [#if channel  [in template "WEB-INF/t/cms/www/sannong/include/nav_position.html" at line 29, column 7]
+}
+// FreeMarker template error (DEBUG mode; use RETHROW in production!):
+// The following has evaluated to null or missing:
+// ==>   [#if channel  [in template "WEB-INF/t/cms/www/sannong/include/nav_position.html" at line 29, column 7]
 
-----
-Tip: It's the step after the last dot that caused this error, not those before it.
-----
-Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use [#if myOptionalVar??]when-present[#else]when-missing[/#if]. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
-----
+// ----
+// Tip: It's the step after the last dot that caused this error, not those before it.
+// ----
+// Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use [#if myOptionalVar??]when-present[#else]when-missing[/#if]. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+// ----
 
-----
-FTL stack trace ("~" means nesting-related):
-	- Failed at: #if channel.parent.parent?exists  [in template "WEB-INF/t/cms/www/sannong/include/nav_position.html" at line 29, column 2]
-	- Reached through: #include "../include/nav_position.html"  [in template "WEB-INF/t/cms/www/sannong/channel/expert-list-all.html" at line 82, column 1]
-----
+// ----
+// FTL stack trace ("~" means nesting-related):
+// 	- Failed at: #if channel.parent.parent?exists  [in template "WEB-INF/t/cms/www/sannong/include/nav_position.html" at line 29, column 2]
+// 	- Reached through: #include "../include/nav_position.html"  [in template "WEB-INF/t/cms/www/sannong/channel/expert-list-all.html" at line 82, column 1]
+// ----
 
-Java stack trace (for programmers):
-----
-freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
-	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
-	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
-	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
-	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
-	at freemarker.core.Dot._eval(Dot.java:48)
-	at freemarker.core.Expression.eval(Expression.java:81)
-	at freemarker.core.ExistenceBuiltins$ExistenceBuiltIn.evalMaybeNonexistentTarget(ExistenceBuiltins.java:52)
-	at freemarker.core.ExistenceBuiltins$existsBI._eval(ExistenceBuiltins.java:100)
-	at freemarker.core.ExistenceBuiltins$existsBI.evalToBoolean(ExistenceBuiltins.java:105)
-	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
-	at freemarker.core.Environment.visit(Environment.java:326)
-	at freemarker.core.Environment.visit(Environment.java:332)
-	at freemarker.core.Environment.include(Environment.java:2505)
-	at freemarker.core.Include.accept(Include.java:171)
-	at freemarker.core.Environment.visit(Environment.java:326)
-	at freemarker.core.Environment.visit(Environment.java:332)
-	at freemarker.core.Environment.process(Environment.java:305)
-	at freemarker.template.Template.process(Template.java:384)
-	at com.jeecms.common.web.springmvc.SimpleFreeMarkerView.renderMergedTemplateModel(SimpleFreeMarkerView.java:114)
-	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
-	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at com.jeecms.common.web.XssFilter.doFilter(XssFilter.java:45)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:151)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at com.jeecms.common.web.ProcessTimeFilter.doFilter(ProcessTimeFilter.java:35)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
-	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
-	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
-	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
-	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:744)
+// Java stack trace (for programmers):
+// ----
+// freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+// 	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+// 	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+// 	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+// 	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+// 	at freemarker.core.Dot._eval(Dot.java:48)
+// 	at freemarker.core.Expression.eval(Expression.java:81)
+// 	at freemarker.core.ExistenceBuiltins$ExistenceBuiltIn.evalMaybeNonexistentTarget(ExistenceBuiltins.java:52)
+// 	at freemarker.core.ExistenceBuiltins$existsBI._eval(ExistenceBuiltins.java:100)
+// 	at freemarker.core.ExistenceBuiltins$existsBI.evalToBoolean(ExistenceBuiltins.java:105)
+// 	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+// 	at freemarker.core.Environment.visit(Environment.java:326)
+// 	at freemarker.core.Environment.visit(Environment.java:332)
+// 	at freemarker.core.Environment.include(Environment.java:2505)
+// 	at freemarker.core.Include.accept(Include.java:171)
+// 	at freemarker.core.Environment.visit(Environment.java:326)
+// 	at freemarker.core.Environment.visit(Environment.java:332)
+// 	at freemarker.core.Environment.process(Environment.java:305)
+// 	at freemarker.template.Template.process(Template.java:384)
+// 	at com.jeecms.common.web.springmvc.SimpleFreeMarkerView.renderMergedTemplateModel(SimpleFreeMarkerView.java:114)
+// 	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+// 	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+// 	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1257)
+// 	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+// 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+// 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+// 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+// 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+// 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+// 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+// 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at com.jeecms.common.web.XssFilter.doFilter(XssFilter.java:45)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+// 	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+// 	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+// 	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+// 	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+// 	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+// 	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+// 	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+// 	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:151)
+// 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+// 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at com.jeecms.common.web.ProcessTimeFilter.doFilter(ProcessTimeFilter.java:35)
+// 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+// 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+// 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+// 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+// 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+// 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+// 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+// 	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+// 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+// 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+// 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+// 	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+// 	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
+// 	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
+// 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+// 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+// 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+// 	at java.lang.Thread.run(Thread.java:744)

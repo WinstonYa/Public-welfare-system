@@ -27,21 +27,22 @@
     <!--<script src="js/jquery.cookie.js"></script>-->
     <!--<![endif]&ndash;&gt;-->
     <style>
-        body{
-            /*width:100%;*/
-            /*height: 100%;*/
+        html,body{
+            width:100%;
+            height:100%;
             background-image: url("./picture/20101626m56a.jpg");
-            /*background-repeat: no-repeat;*/
-            /*background-size: 100% 100%;*/
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow:hidden;
         }
         .logo{
             display: block;
             width: 100px;
             height: 100px;
-            background: url(./picture/logo.png) no-repeat center center;
+            /* background: url(./picture/logo.png) no-repeat center center; */
             background-size: 100% 100%;
             background: none \9;
-            vertical-align: top;
+            /* vertical-align: top; */
             position: absolute;
             left: 15px;
             top: 5px;
@@ -119,7 +120,6 @@
                             // localStorage.setItem('userId',data.id);//localStorage持久化的本地保存
                             localStorage.setItem('username', data.username);//localStorage持久化的本地保存
                             localStorage.setItem('token', ret.data);    //将token持久化本地保存
-                            console.log("本地保存的token:" + window.localStorage.getItem("token"));
                             //登录成功跳转页面
                             window.location.href = 'index.html';
                         } else {

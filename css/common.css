@@ -124,10 +124,10 @@ a:focus {
 .header .top-bar .web-name {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 30px;
     color: #333;
     font-weight: bold;
-    padding-left: 80px;
+    /* padding-left: 80px; */
     height: 48px;
     line-height: 60px;
     float: left;
@@ -135,7 +135,7 @@ a:focus {
 
 }
 
-.header .top-bar .logo {
+/* .header .top-bar .logo {
     display: block;
     width: 65px;
     height: 65px;
@@ -147,7 +147,7 @@ a:focus {
     left: 10px;
     top: 0;
 
-}
+} */
 
 .header .top-bar .search-bar {
     width: 400px;
@@ -198,9 +198,9 @@ a:focus {
     background: url('../picture/icon-search.png') no-repeat center center;
     background-size: 100% 100%;
     cursor: pointer;
-    background: none \9;
+    /* background: none \9;
 / / top: 20 px \9;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/icon-search.png', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/icon-search.png', sizingMethod='scale'); */
 
 }
 
@@ -231,7 +231,7 @@ a:focus {
 }
 .nav-bg .menu>li {
     float: left;
-    width: 14.28%;
+    width: 200px;
     text-align: center;
 }
 
@@ -260,9 +260,9 @@ a:focus {
     padding: 0 30px;
     display: block;
     color: #fff;
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
 }
 
 /*.nav-bg .menu li a:hover {
@@ -301,8 +301,8 @@ a:focus {
     height: 12px;
     background: url("../picture/icon-jiantou.png");
     background-size: 13px auto;
-    margin-top: -26px;
-    margin-left: 90px;
+    margin-top: -30px;
+    margin-left: 110px;
     transition: 500ms;
 }
 
@@ -314,7 +314,7 @@ a:focus {
     filter: alpha(opacity=90);
     position: absolute;
     z-index: 999;
-    top: 40px;
+    top: 50px;
     left: 0;
     float: none;
     min-width: auto;
@@ -334,7 +334,7 @@ a:focus {
     border-right: 1px solid #acd1f9;
 }
 .nav-bg .menu li > .menu-child li a {
-    float: left;
+    /* float: left; */
     display: inline-block;
     padding: 0;
     color: #666;
@@ -413,13 +413,13 @@ a:focus {
 }
 
 .header-login a {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 50px;
     color: #333;
 }
 
 .header-login .separate{
-    font-size: 12px;
+    font-size: 18px;
     color: #3B99FC;
 }
 .header-login a:hover {
@@ -642,7 +642,7 @@ a:focus {
     -webkit-box-sizing: border-box;
     line-height: 34px;
     text-align: center;
-    float: left;
+    /* float: left; */
     text-indent: 0;
     color: #666666;
     font-size: 12px;
@@ -705,7 +705,7 @@ a:focus {
     -webkit-box-sizing: border-box;
     line-height: 34px;
     text-align: center;
-    float: left;
+    /* float: left; */
     text-indent: 0;
     color: #fff;
     margin: 0 3px;
@@ -841,8 +841,6 @@ a:focus {
     margin-right: 15px;
 }
 
-.footer-menu .footer-copy {
-}
 
 .footer-info {
     line-height: 22px;
@@ -867,6 +865,7 @@ a:focus {
     padding: 20px 70px;
     /*margin-top: 200px;*/
     margin-top:120px;
+    border-radius: 10px;
 }
 
 .login-title {
@@ -1018,8 +1017,9 @@ a:focus {
 
 /*---------------------新闻----------------------*/
 #news{
-    height: 264px;
+    height: 350px;
 }
+
 #news .oneArticle{
     height: 33px;
 }
@@ -1034,6 +1034,7 @@ a:focus {
 #news .oneArticle .newsType:hover{
     color: #2162e6;
 }
+
 #news .oneArticle .newsTitle{
 
     display: inline-block;
@@ -1048,7 +1049,7 @@ a:focus {
 #news .oneArticle .szywnewsTitle{
 
     display: inline-block;
-    width: 650px;
+    width: 500px;
     margin-bottom: -5px;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -1237,6 +1238,13 @@ a:focus {
     box-shadow: 1px 1px 1px #ccc;
 }
 
+.content-video{
+    width: 800px;
+    height: 500px;
+}
+.content-video video{
+    width: 720px;display: block;margin: 50px auto 80px auto;
+}
 
 
 

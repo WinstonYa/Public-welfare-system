@@ -47,7 +47,7 @@
 		<div class="col-md-9">
 			<div class="ej-menu">
 				<ul>
-					<a href="szyw.html">时政要闻</a>
+					<a href="szyw.html">政策法规</a>
 					<a href="nyyw.html">农业要闻</a>
 					<a href="kjyw.html">科技要闻</a>
 					<a class="active" href="nsqx.html">农事气象</a>
@@ -78,9 +78,16 @@
 				</div>
 			</div>
 			<div class="col-md-4 padding-0">
-				<div class="footer-info">主办方：监利市回族自治区农业农村厅 </div>
-				<div class="footer-info">技术支持：中国电信股份有限公司监利市分公司 </div>
-				<div class="footer-info">12316农业综合信息网 &copy; 版权所有 <a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">宁ICP备：12000679号-3</a></div>
+			 <div class="footer-info">
+              主办方：
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
+            </div>
+            <div class="footer-info">技术支持：<a href="http://www.zd-tech.net/">中迪联创科技有限公司</a></div>
+            <div class="footer-info">
+              <a href="http://www.jianli.gov.cn/xxgk_30/xxgkml/jgzn/201912/t20191215_427946.shtml">监利市农业农村局</a>
+              &copy; 版权所有 鄂ICP备：1111111号-3</a
+              >
+            </div>
 			</div>
 		</div>
 	</div>
@@ -91,7 +98,7 @@
 	$(document).ready(function(){
 		var return_none = "1";
 		var list=$(".text");
-		var channel_name ="时政要闻";
+		var channel_name ="政策法规";
 		for (i=0;i<$(".text").length;i++) {
 			var active =$(".text").eq(i).text();
 			if(active==channel_name){
@@ -127,7 +134,7 @@
 		$("#menuList li").eq(1).attr("class","more active")
 		var data = {
 			pageNum : 1,
-			pageRow : 2,
+			pageRow : 12,
 			sysType:"公益性系统",
 			articleType:"农事气象",
 			status:"1"
@@ -165,13 +172,16 @@
 			//总条数
 			totalData: total,
 			//每页条数
-			showData:2,
+			showData:12,
 			//固定页码数
-			mode:"unfixed",
-			count:3,
-			isHide:true,
-			//是否一直显示上一页下一页
-			keepShowPN:false,
+			mode:"fixed",
+			// count:5,
+			//开启第一页和最后一页的按钮,
+			coping: true,
+			homePage: '首页',
+			endPage: '末页',
+			prevContent: '<',
+			nextContent: '>',
 			callback: function (api) {
 				data.pageNum = api.getCurrent();
 				InitList();

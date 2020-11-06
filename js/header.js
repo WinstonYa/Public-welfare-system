@@ -21,7 +21,7 @@
         + '<span class="text">农业政策</span><i class="font"></i>'
         + '</a>'
         + '<ul class="menu-child">'
-        + '<li><a href="szyw.html">时政要闻</a></li>'
+        + '<li><a href="szyw.html">政策法规</a></li>'
         + '<li><a href="nyyw.html">农业要闻</a></li>'
         + '<li><a href="kjyw.html">科技要闻</a></li>'
         + '<li><a href="nsqx.html">农事气象</a></li>'
