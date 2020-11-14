@@ -129,7 +129,7 @@ body {
 
 .news-list {
   padding: 2px 15px 10px;
-  height: 276px;
+  height: 232px;
 }
 
 .news-list ul li {
@@ -159,6 +159,7 @@ body {
 .supply-tab > li > a {
   border: none;
   margin-right: 10px;
+  font-weight: 600;
 }
 
 .supply-tab > li > a:focus,
@@ -199,7 +200,8 @@ body {
   width: 86px;
   height: 40px;
   background: none;
-  border: none;
+  border: 1px solid#888;
+  border-radius: 5px;
 }
 
 .supply-tab input:hover[type='button'] {
@@ -373,7 +375,7 @@ body {
 }
 
 .zj-img img {
-  width: 138px;
+  width: 150px;
   height: 175px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 3px #ccc;
@@ -479,6 +481,7 @@ body {
 }
 
 .hangqing-menu li {
+  font-weight: 600;
   padding: 8px 10px;
   text-align: center;
   margin: 10px 0;
@@ -510,7 +513,7 @@ body {
 
 .weather .nav-tabs > li {
   margin-bottom: 0;
-  width: 50%;
+  width: 100%;
 }
 
 .weather .nav-tabs > li.active > a,
@@ -545,7 +548,7 @@ body {
   width: 40%;
   float: left;
   padding: 10px 0 0 15px;
-  height: 170px;
+  height: 210px;
   overflow: hidden;
 }
 
@@ -576,7 +579,7 @@ body {
 /*  --热线问答--  */
 .question {
   padding: 0 15px;
-  height: 157px;
+  height: 188px;
   overflow: hidden;
   margin: 10px 0;
 }
@@ -611,6 +614,7 @@ body {
   border: none;
   margin-right: 10px;
   padding: 6px 15px;
+  font-weight: 600;
 }
 
 .nongye-tab > li > a:focus,

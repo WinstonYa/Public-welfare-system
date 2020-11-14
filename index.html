@@ -77,7 +77,7 @@
         </div>
         <!--12316动态-->
         <div class="col-md-5 padding-0 margin-bottom-10">
-          <div class="bg-fff" style="height: 400px;">
+          <div class="bg-fff" style="height: 400px">
             <div class="title-bg">
               <label class="title">新闻动态</label>
               <span
@@ -237,7 +237,7 @@
                 ><a href="baike/index.jhtml" target="_blank"> 更多<i class="iconfont">&#xe64d;</i> </a>
               </span>
             </div>
-            <div class="news-list" style="height: 210px">
+            <div class="news-list">
               <ul id="newsList">
                 <!--<li>
                             <a href="xmsyjs/index.jhtml" target="_blank" class="lanmu">[畜牧兽医技术]</a>
@@ -287,7 +287,7 @@
       <div class="row">
         <!--农技视频-->
         <div class="col-md-8 padding-left-0 margin-bottom-10">
-          <div class="bg-fff clearfix">
+          <div class="bg-fff clearfix" style="height: 250px;">
             <div class="title-bg">
               <label class="title">农技视频</label>
               <span>
@@ -491,7 +491,7 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
         CONFIG: {
           layout: 1,
           width: 480,
-          height: 208,
+          height: 230,
           background: 1,
           dataColor: 'FFFFFF',
           borderRadius: 1,
@@ -1389,7 +1389,7 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
                 for (var i = 0; i < res.data.rows.length; i++) {
                   var date = res.data.rows[i].pub_time.substr(0, 10);
                   $('#news').append(
-                    '<li class="oneArticle" style="height:40px;font-size: 15px;">' +
+                    '<li class="oneArticle">' +
                       '<a class="newsType">[政策法规]</a>' +
                       '<a href="common.html?id=' +
                       res.data.rows[i].id +
@@ -1488,9 +1488,9 @@ with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEl
                 for (var i = 0; i < res.data.rows.length; i++) {
                   var date = res.data.rows[i].pub_time.substr(0, 10);
                   $('#newsList').append(
-                    ' <li>\n' +
+                    ' <li class="oneArticle">\n' +
                       '       <a href="zzjs.html" target="_blank" class="lanmu">[农业百科]</a>\n' +
-                      '       <a href="./common.html?id=' +
+                      '       <a class="newsTitle" href="./common.html?id=' +
                       res.data.rows[i].id +
                       '" >' +
                       res.data.rows[i].title +
